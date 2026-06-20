@@ -62,6 +62,16 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 @keyframes sheen{0%{background-position:135% 0}100%{background-position:-135% 0}}
 @media(prefers-reduced-motion:reduce){.hname span{animation:none;-webkit-text-fill-color:var(--r)}}
 
+/* tech marquee */
+.mq{overflow:hidden;border-bottom:1px solid var(--bd);background:#0b0b0b;padding:20px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.mqt{display:flex;width:max-content;align-items:center;animation:mqscroll 42s linear infinite}
+.mq:hover .mqt{animation-play-state:paused}
+.mqi{display:flex;align-items:center;gap:10px;padding:0 26px;white-space:nowrap}
+.mqi img{height:23px;width:auto;display:block;opacity:.85}
+.mqi span{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8a8278}
+@keyframes mqscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.mqt{animation:none}}
+
 /* section chrome */
 section{border-bottom:1px solid var(--bd)}
 .sh{display:grid;grid-template-columns:180px 1fr;border-bottom:1px solid var(--bd)}
@@ -281,17 +291,40 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
   <div class="hr2">
     <p class="sklbl">Core Stack</p>
     <div class="skgrid">
-      <div class="skc"><span class="skcl">ML/AI</span>XGBoost · LightGBM · CNNs · LLMs · RAG</div>
-      <div class="skc"><span class="skcl">Optimization</span>LP · Integer Programming · PuLP · Monte Carlo</div>
-      <div class="skc"><span class="skcl">Graph AI</span>Neo4j · Cypher · PrimeKG · Knowledge Graphs</div>
-      <div class="skc"><span class="skcl">Languages</span>Python · SQL · PL/SQL · TypeScript · R</div>
-      <div class="skc"><span class="skcl">NLP</span>spaCy · NLTK · Transformers · NER · TF-IDF</div>
-      <div class="skc"><span class="skcl">Explainability</span>SHAP · LIME · EBM · Partial Dependence</div>
-      <div class="skc"><span class="skcl">Infra</span>Docker · FastAPI · Streamlit · Ollama · React</div>
-      <div class="skc"><span class="skcl">Viz</span>Tableau · Recharts · Matplotlib · Power BI</div>
+      <div class="skc"><span class="skcl">Languages</span>Python · SQL · R · PL/SQL · TypeScript</div>
+      <div class="skc"><span class="skcl">ML &amp; Stats</span>scikit-learn · XGBoost · LightGBM · pandas · NumPy</div>
+      <div class="skc"><span class="skcl">Deep Learning &amp; GenAI</span>TensorFlow · Keras · CNNs · LLMs · RAG · Hugging Face</div>
+      <div class="skc"><span class="skcl">NLP &amp; Graph</span>spaCy · NLTK · Transformers · Neo4j · Cypher</div>
+      <div class="skc"><span class="skcl">Data Engineering</span>PySpark · Databricks · Delta Lake · Unity Catalog · ETL/ELT</div>
+      <div class="skc"><span class="skcl">MLOps &amp; Infra</span>MLflow · Docker · FastAPI · Git · GitHub Actions</div>
+      <div class="skc"><span class="skcl">Explainability &amp; OR</span>SHAP · LIME · EBM · LP · PuLP · Monte Carlo</div>
+      <div class="skc"><span class="skcl">Data &amp; BI</span>Tableau · Power BI · Plotly · MongoDB · Oracle SQL</div>
     </div>
   </div>
 </header>
+
+<!-- ════════ TECH MARQUEE ════════ -->
+<div class="mq" aria-label="Core stack">
+  <div class="mqt">
+    <span class="mqi"><img src="https://cdn.simpleicons.org/python/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Python</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/apachespark/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>PySpark</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/databricks/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Databricks</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/mlflow/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>MLflow</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/tensorflow/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>TensorFlow</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/keras/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Keras</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/scikitlearn/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>scikit-learn</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/pandas/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>pandas</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/numpy/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>NumPy</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/huggingface/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Hugging Face</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/docker/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Docker</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/fastapi/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>FastAPI</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/neo4j/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Neo4j</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/mongodb/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>MongoDB</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/plotly/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Plotly</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/streamlit/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Streamlit</span></span>
+  </div>
+</div>
+<script>(function(){var m=document.currentScript.previousElementSibling;if(!m)return;var t=m.querySelector('.mqt');if(t)t.innerHTML+=t.innerHTML;})();</script>
 
 <!-- ════════ INDEX / DEPTH MAP ════════ -->
 <section class="idx" id="map">
