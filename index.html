@@ -458,6 +458,67 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
     </div>
   </div>
 </section>
+  <!-- ════════════════════ SUPPLY CHAIN PORTFOLIO ════════════════════ -->
+<section>
+  <div class="sh"><div class="snum">05.5 / SUPPLY CHAIN</div><div class="stit">Operations, Strategy & Disruption Analysis</div></div>
+  <div class="pg">
+
+    <div class="pc cgr" onclick="openOv('clearpath')">
+      <div class="pt">Geospatial ML · Network Analysis · Federal Data · Capstone</div>
+      <div class="pn">ClearPath Analytics</div>
+      <div class="ph">Dallas-Fort Worth costs $5.28T to reroute — not the highest-risk corridor by score</div>
+      <p class="pd">Random Forest (90.3% LOOCV) + gravity model + NetworkX failure simulation across 134 U.S. freight corridors. $18.04T in freight analyzed. Live automated weekly digest deployed via GitHub Actions.</p>
+      <div class="pills"><span class="pill">Random Forest</span><span class="pill">NetworkX</span><span class="pill">Census CFS API</span></div>
+      <div class="plink">Open Case Study →</div>
+    </div>
+
+    <div class="pc co" onclick="openOv('warby')">
+      <div class="pt">Demand Forecasting · Capacity Planning · Vertical Integration</div>
+      <div class="pn">Warby Parker</div>
+      <div class="ph">Two labs hit capacity at ~450 stores — 900-store target requires doubling lab network</div>
+      <p class="pd">Lab-capacity constraint model quantifying the binding throughput ceiling in Warby Parker's vertical integration strategy. Demand forecasting framework + progressive-lens mix analysis. Q1 2026 10-Q sourced.</p>
+      <div class="pills"><span class="pill">Capacity Modeling</span><span class="pill">Demand Planning</span><span class="pill">DTC Strategy</span></div>
+      <div class="plink">Open Case Study →</div>
+    </div>
+
+    <div class="pc cr" onclick="openOv('acme')">
+      <div class="pt">Stage-Gate · CPM · Product Development · Ivey Case</div>
+      <div class="pn">Acme Medical Imaging</div>
+      <div class="ph">A mid-project chipset pivot reset 16-week lead times — no one modeled the impact first</div>
+      <p class="pd">Root cause analysis of a WiMAX medical device launch failure. Stage-Gate process design + CPM scheduling to prevent unilateral CEO decisions from cascading through procurement and assembly timelines.</p>
+      <div class="pills"><span class="pill">Stage-Gate</span><span class="pill">CPM</span><span class="pill">RACI</span></div>
+      <div class="plink">Open Case Study →</div>
+    </div>
+
+    <div class="pc cb" onclick="openOv('halloran')">
+      <div class="pt">Distributed Inventory · Customer Profitability · HBS Case</div>
+      <div class="pn">Halloran Metals</div>
+      <div class="ph">40% of revenue from accounts under $20K/year — most are unprofitable after fulfillment cost</div>
+      <p class="pd">Strategic and operational analysis of a steel service center facing a 70% profit drop. Distributed inventory vs centralized model comparison, Worcester shuttle economics, and customer profitability segmentation.</p>
+      <div class="pills"><span class="pill">Inventory Pooling</span><span class="pill">Service Center</span><span class="pill">Profitability</span></div>
+      <div class="plink">Open Case Study →</div>
+    </div>
+
+    <div class="pc cgr" onclick="openOv('westmarine')">
+      <div class="pt">CPFR · Supply Chain Turnaround · Acquisition Integration</div>
+      <div class="pn">West Marine</div>
+      <div class="ph">In-stock from 75% to 96% — CPFR with 150 EDI vendors rebuilt a business E&B nearly destroyed</div>
+      <p class="pd">Analysis of West Marine's supply chain transformation: multi-echelon JDA replenishment, CPFR rollout across 350+ vendors, and 60-day integration playbook for the Boat U.S. acquisition.</p>
+      <div class="pills"><span class="pill">CPFR</span><span class="pill">Multi-Echelon</span><span class="pill">Acquisition</span></div>
+      <div class="plink">Open Case Study →</div>
+    </div>
+
+    <div class="pc cp" onclick="openOv('klworldwide')">
+      <div class="pt">IT-SC Alignment · ERP · Data Warehouse · Ivey/NEU Case</div>
+      <div class="pn">KL Worldwide</div>
+      <div class="ph">$311M private-label channel blind — no cross-facility SCM visibility across 4 global M&D centers</div>
+      <p class="pd">IT-supply chain alignment analysis using McFarlan's IRM framework. SAP vs Oracle ERP gap mapping, EDW investment roadmap, and prioritized 24-month implementation sequence for a $1B sports apparel company.</p>
+      <div class="pills"><span class="pill">IRM Framework</span><span class="pill">SAP SCM</span><span class="pill">EDW</span></div>
+      <div class="plink">Open Case Study →</div>
+    </div>
+
+  </div>
+</section>
 <!-- COURSEWORK QUICK-VIEW -->
 <section>
   <div class="sh"><div class="snum">04 / MORE COURSEWORK</div><div class="stit">Additional Analyses</div></div>
@@ -1278,27 +1339,553 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
   </div>
 </div>
 </div>
+<!-- ════════ CLEARPATH ANALYTICS ════════ -->
+<div id="ov-clearpath" class="ov">
+<button class="cbtn" onclick="closeOv()">← Back</button>
+<div class="oh" style="background:linear-gradient(155deg,#001a0a 0%,#080808 60%)">
+  <div class="otag" style="color:var(--gr)">Geospatial ML · Network Analysis · Federal Data · Business Analytics Capstone</div>
+  <div class="oname">ClearPath Analytics</div>
+  <div class="ohead">Ranked all 134 U.S. freight corridors by disruption risk — the highest-vulnerability corridor is not the most dangerous one to lose.</div>
+  <div class="omets">
+    <div class="omet"><div class="omn" style="color:var(--gr)">90.3%</div><div class="oml">RF LOOCV Accuracy</div></div>
+    <div class="omet"><div class="omn" style="color:var(--g)">$18.04T</div><div class="oml">Freight Analyzed</div></div>
+    <div class="omet"><div class="omn" style="color:var(--w)">$5.28T</div><div class="oml">DFW Rerouting Cost</div></div>
+    <div class="omet"><div class="omn" style="color:var(--r)">134</div><div class="oml">CFS Areas Ranked</div></div>
+    <div class="omet"><div class="omn" style="color:var(--gr)">17,822</div><div class="oml">Corridor Pairs Modeled</div></div>
+  </div>
+</div>
+<div class="obody">
+  <div class="osec">
+    <div class="ostag">The Problem</div>
+    <div class="ostit">A $12M/Week Bridge Collapse Exposed a National Blind Spot</div>
+    <div class="otxt">
+      <p>The 2024 Francis Scott Key Bridge collapse dropped Baltimore's regional freight 25% within one month at an estimated cost of <strong>$12M per week</strong>. Baltimore isn't even a top-5 corridor by freight value — yet the disruption required coordinated federal and state response. The obvious question: if a mid-size corridor failure produces that damage, what happens when Los Angeles-Long Beach, Houston, or Dallas-Fort Worth fails?</p>
+      <p>No publicly available tool answered that question at the geographic resolution the 2022 Census Commodity Flow Survey now makes possible. ClearPath Analytics is that tool.</p>
+    </div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Data Pipeline</div>
+    <div class="ostit">Seven Raw Sources, Five Derived Files, One Critical Bug Found and Fixed</div>
+    <div class="otxt"><p>Four CFS datasets were retrieved programmatically via the Census Bureau API (94,023 rows paginated across multiple calls). Two TIGER/Line shapefiles from BTS provided geographic boundaries. During gravity model construction, a centroid geocoding bug was discovered — <strong>66 of 134 areas had been placed on incorrect coordinates</strong> (Buffalo on New York City's lat/lon, Baltimore in South Carolina). The fix read INTPTLAT/INTPTLON directly from the shapefile, producing zero zero-distance corridors. Vulnerability rankings were preserved at Spearman ρ=0.978.</p></div>
+    <div class="flow">
+      <div class="fstep"><div class="fsn">Step 1</div><div class="fsname">Census CFS API (94K rows)</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Step 2</div><div class="fsname">Centroid Bug Fix</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Step 3</div><div class="fsname">Composite Vuln. Index</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Step 4</div><div class="fsname">RF Classifier + Gravity Model</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Step 5</div><div class="fsname">NetworkX Failure Sim</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Step 6</div><div class="fsname">GitHub Actions Digest</div></div>
+    </div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Vulnerability Scoring</div>
+    <div class="ostit">Composite Index: Value 60% · Tonnage 40%</div>
+    <div class="otxt"><p>Each of 134 CFS areas receives a score: <code>vuln = (val_norm × 0.60) + (ton_norm × 0.40)</code>. Shipment value carries higher weight because high-value freight — pharmaceuticals, electronics, motor vehicles — generates disproportionate economic disruption per unit of volume. Sensitivity analysis across 60/40, 50/50, and 40/60 weightings yields Spearman ρ ≥ 0.99 — the top-10 rankings are robust to weighting choice.</p></div>
+    <table class="ctbl">
+      <thead><tr><th>Rank</th><th>CFS Area</th><th>Freight Value</th><th>Vuln. Score</th><th>Tier</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>1</td><td>Los Angeles-Long Beach</td><td>$7,963.8B</td><td>0.882</td><td>High</td></tr>
+        <tr><td>2</td><td>Houston-The Woodlands</td><td>$4,234.6B</td><td>0.719</td><td>High</td></tr>
+        <tr><td>3</td><td>Chicago-Naperville</td><td>$4,290.3B</td><td>0.521</td><td>High</td></tr>
+        <tr><td>4</td><td>Dallas-Fort Worth</td><td>$3,757.1B</td><td>0.500</td><td>High</td></tr>
+        <tr><td>14</td><td>Seattle-Tacoma</td><td>$2,123.7B</td><td>0.243</td><td>High</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="osec">
+    <div class="ostag">The Counterintuitive Finding</div>
+    <div class="ostit">Network Position Beats Vulnerability Score — Dallas-Fort Worth Is the Real Risk</div>
+    <div class="otxt"><p>LA-Long Beach scores #1 by vulnerability (0.882) but produces only the <strong>4th-highest rerouting cost</strong> — $1.49T — because the K=8 network provides multiple coastal bypass routes. Dallas-Fort Worth scores #4 (0.500) but produces the <strong>single worst failure outcome: $5.28T rerouting cost, 484 affected OD pairs, 32,954 extra miles</strong>. Structural network centrality matters more than raw freight volume when simulating real disruptions.</p></div>
+    <table class="ctbl">
+      <thead><tr><th>CFS Area</th><th>Vuln. Rank</th><th>Rerouting Cost</th><th>OD Pairs</th><th>Extra Miles</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>Dallas-Fort Worth</td><td>#4</td><td>$5,284.78B</td><td>484</td><td>32,954</td></tr>
+        <tr><td>Remainder of Pennsylvania</td><td>#7</td><td>$3,977.46B</td><td>1,028</td><td>30,695</td></tr>
+        <tr><td>Remainder of Illinois</td><td>#6</td><td>$3,282.03B</td><td>426</td><td>19,144</td></tr>
+        <tr><td>Los Angeles-Long Beach</td><td>#1</td><td>$1,487.95B</td><td>109</td><td>7,151</td></tr>
+        <tr><td>Houston-The Woodlands</td><td>#2</td><td>— (resilient)</td><td>0</td><td>—</td></tr>
+      </tbody>
+    </table>
+    <div class="insight">Houston scores #2 by vulnerability but produces zero rerouting cost — the K=8 network absorbs its failure entirely. A lower-connectivity K=4 topology would surface Houston's fragility. The model's topology assumption is itself a design choice that shapes the conclusions.</div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Machine Learning</div>
+    <div class="ostit">Random Forest: 90.3% LOOCV Across 134 Areas</div>
+    <div class="otxt"><p>With only 134 rows, standard 80/20 splits are unreliable. Leave-one-out cross-validation was used instead — each area serves as its own test case once. The classifier achieves <strong>90.3% accuracy</strong>. Feature importance: Tonnage (0.326) and Value (0.285) together account for 61% of predictive power. Dominant commodity type contributes exactly zero — it's how much freight moves, not what kind.</p></div>
+    <div class="barchart">
+      <div class="brow"><div class="blbl">Tonnage</div><div class="btrack"><div class="bfill" style="background:var(--gr)" data-w="100"></div></div><div class="bval">0.326</div></div>
+      <div class="brow"><div class="blbl">Value</div><div class="btrack"><div class="bfill" style="background:var(--g)" data-w="87"></div></div><div class="bval">0.285</div></div>
+      <div class="brow"><div class="blbl">Num Commodities</div><div class="btrack"><div class="bfill" style="background:var(--b)" data-w="57"></div></div><div class="bval">0.187</div></div>
+      <div class="brow"><div class="blbl">Val/Ton Ratio</div><div class="btrack"><div class="bfill" style="background:var(--p)" data-w="23"></div></div><div class="bval">0.076</div></div>
+      <div class="brow"><div class="blbl">Seaport Distance</div><div class="btrack"><div class="bfill" style="background:var(--r)" data-w="20"></div></div><div class="bval">0.065</div></div>
+      <div class="brow"><div class="blbl">Dominant Commodity</div><div class="btrack"><div class="bfill" style="background:var(--mu)" data-w="1"></div></div><div class="bval">0.000</div></div>
+    </div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Hidden Risk: Memphis</div>
+    <div class="ostit">Rank #70 Overall — Top 3 Nationally for Pharmaceutical Freight</div>
+    <div class="otxt"><p>Memphis-Forrest City ranks 70th out of 134 by overall vulnerability score (0.0847) — Low tier. A policymaker scanning the ranked table would have no reason to flag it. Yet EDA revealed it handles <strong>4.5% of national pharmaceutical freight value</strong> — third behind only LA-Long Beach (11.5%) and Chicago (6.3%) — because the FedEx SuperHub routes overnight pharmaceutical distribution through Memphis. A composite score built on total VAL and TON will always miss this kind of single-facility concentration risk.</p></div>
+    <div class="insight">The Memphis finding illustrates why aggregate vulnerability rankings need commodity-level overlays. The risk isn't geographic — it's carrier-specific. The correct mitigation isn't rerouting around Memphis; it's maintaining a secondary overnight carrier relationship for time-sensitive pharmaceutical shipments.</div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Automated Monitoring</div>
+    <div class="ostit">Weekly Digest Deployed via GitHub Actions</div>
+    <div class="otxt"><p>digest_runner.py monitors BTS freight indicators for the top 15 CFS areas and sends email alerts when volume drops ≥15% below a 4-week rolling average. In its first live run against real BTS data, it correctly flagged a <strong>74.1% week-over-week drop</strong> in the New York-Newark corridor. Deployed on GitHub Actions — no server required.</p></div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Stack</div><div class="ostit">Built With</div>
+    <div class="tools"><span class="ttag">Python</span><span class="ttag">Pandas</span><span class="ttag">GeoPandas</span><span class="ttag">NetworkX</span><span class="ttag">Scikit-learn</span><span class="ttag">Random Forest</span><span class="ttag">Haversine</span><span class="ttag">Census CFS API</span><span class="ttag">BTS TIGER/Line</span><span class="ttag">Dijkstra Shortest Path</span><span class="ttag">GitHub Actions</span><span class="ttag">Plotly</span></div>
+    <div class="olinks">
+      <a href="https://github.com/SarrangTech" class="olink pri" target="_blank">GitHub →</a>
+    </div>
+  </div>
+</div>
+</div>
 
+<!-- ════════ WARBY PARKER ════════ -->
+<div id="ov-warby" class="ov">
+<button class="cbtn" onclick="closeOv()">← Back</button>
+<div class="oh" style="background:linear-gradient(155deg,#0a0018 0%,#080808 60%)">
+  <div class="otag" style="color:var(--p)">Demand Forecasting · Capacity Planning · Vertical Integration Strategy</div>
+  <div class="oname">Warby Parker Supply Chain</div>
+  <div class="ohead">The same vertical integration that gives Warby Parker its $95 price point will prevent it from reaching 900 stores without doubling its lab network.</div>
+  <div class="omets">
+    <div class="omet"><div class="omn" style="color:var(--p)">~450</div><div class="oml">Stores Before Lab Ceiling</div></div>
+    <div class="omet"><div class="omn" style="color:var(--g)">$871.9M</div><div class="oml">FY2025 Revenue</div></div>
+    <div class="omet"><div class="omn" style="color:var(--w)">54.0%</div><div class="oml">Q1 2026 Gross Margin</div></div>
+    <div class="omet"><div class="omn" style="color:var(--r)">$1.6M</div><div class="oml">First-Ever Net Profit FY2025</div></div>
+  </div>
+</div>
+<div class="obody">
+  <div class="osec">
+    <div class="ostag">The Strategic Thesis</div>
+    <div class="ostit">Vertical Integration Is Both the Moat and the Burden</div>
+    <div class="otxt">
+      <p>Warby Parker's founding insight was simple: EssilorLuxottica's layered markups — licensing fees, wholesale margins, third-party lab costs — turned a roughly $30 product into a $300–$500 sale. By owning frame design, two optical labs, and all retail channels, Warby Parker could sell the same product at $95 and still capture margin. The vertical integration is real and defensible.</p>
+      <p>But it converts variable markups into <strong>fixed lab and SG&A costs that only pay off at scale</strong>. Warby Parker reached its first full-year net profit in FY2025 — $1.6M on $871.9M revenue — after narrowing operating losses from -$111M (2022) to -$72M (2023) to -$30M (2024). The company turns profitable only when volume and lab utilization are high enough to absorb fixed costs. That is exactly what strong demand forecasting delivers.</p>
+    </div>
+  </div>
+  <div class="osec">
+    <div class="ostag">The Lab Capacity Model</div>
+    <div class="ostit">Current Two-Lab Network Exhausted at ~1.25x Today's Volume</div>
+    <div class="otxt"><p>Today's lab order volume is indexed at 100. Two-lab practical capacity: 125 (80% utilization, consistent with management's cited 80–85% target zone). Retail makes up ~75% of revenue. Mature stores sell far more than newly opened ones — growing to 900 stores implies approximately <strong>2.5x today's order volume</strong> once those stores mature. The progressive lens shift from 18% to 22% adds a smaller increase (progressives take ~1.5x lab time).</p></div>
+    <table class="ctbl">
+      <thead><tr><th>Store Count</th><th>Indexed Demand</th><th>Two-Lab Capacity</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>337 (today)</td><td>100</td><td>125</td><td>Within capacity</td></tr>
+        <tr><td>450–500</td><td>~125</td><td>125</td><td>Ceiling reached</td></tr>
+        <tr><td>700</td><td>~190</td><td>125</td><td>52% over capacity</td></tr>
+        <tr><td>900 (target)</td><td>~245</td><td>125</td><td>96% over capacity</td></tr>
+      </tbody>
+    </table>
+    <div class="insight">Reaching 900 stores would require approximately doubling lab capacity — plausibly a third and fourth facility phased to lead, not follow, the store build. Lab capacity, not retail real estate, is the gating factor on the expansion.</div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Postponement Architecture</div>
+    <div class="ostit">Why the Lab Is the Decoupling Point — Not the Warehouse</div>
+    <div class="otxt">
+      <p>Warby Parker uses a postponement strategy: frames are manufactured to stock and pushed into inventory (forecastable), while lenses are manufactured to order and pulled by each customer's prescription (unforecastable). The two streams converge at the optical lab, which is the <strong>customer-order decoupling point</strong>. This is what allows mass customization of a medical device at $95 with minimal finished-goods inventory.</p>
+      <p>The tradeoff: almost no finished goods sit downstream of the lab. The network carries little slack. A critical input — custom cellulose acetate — is sourced from a single family-run Italian factory. An outage at either of the two labs would immediately cause fulfillment delays with no buffer inventory to absorb it.</p>
+    </div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Demand Forecasting Framework</div>
+    <div class="ostit">Three Signal Layers Required for Effective Lab Planning</div>
+    <table class="ctbl">
+      <thead><tr><th>Layer</th><th>Key Signals</th><th>Planning Implication</th></tr></thead>
+      <tbody>
+        <tr><td>Frame / Style Demand</td><td>Home Try-On rates, virtual try-on clicks, seasonal collections (~20/yr)</td><td>Pre-position frame inventory at regional labs before collection peak</td></tr>
+        <tr class="hlrow"><td>Prescription / Lens Mix</td><td>Progressive-lens penetration (~18% of optical sales), single-vision split</td><td>Progressives take 1.5× lab time — forecasting their share is critical to throughput planning</td></tr>
+        <tr><td>Store Network Growth</td><td>New-store opening schedule, store maturation curve (12–24 months)</td><td>Lab capacity must be modeled against 900-store target; current two-lab structure is a bottleneck</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="osec">
+    <div class="ostag">Quality System</div>
+    <div class="ostit">Remake Rate Is the Central Operational Metric — And It's Undisclosed</div>
+    <div class="otxt"><p>The industry average remake rate is ~15% of lens orders. Each remake costs an estimated $75–$250 in replacement lenses, shipping, and labor. Warby Parker does not disclose its remake rate. However, owning both labs positions it to track and act on this metric more directly than competitors who outsource fabrication. As progressive-lens mix grows from 18% to 22% — a higher-complexity, higher-remake-risk product — the remake rate becomes the single most actionable quality-and-cost lever available.</p></div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Recommendations</div>
+    <div class="ostit">Eight Operational Priorities From the Analysis</div>
+    <ul class="clist">
+      <li class="active"><strong>Invest in demand-planning tools</strong> — connect forecasting to a live lab utilization dashboard</li>
+      <li class="active"><strong>Add lab capacity before building stores</strong> — third and fourth labs must lead, not follow, store growth</li>
+      <li><strong>Tie store openings to lab capacity</strong> — not just real estate availability</li>
+      <li><strong>Regrow e-commerce</strong> — fell in Q1 2026 while stores grew; highest margin potential</li>
+      <li><strong>Track remake rate by cause, lens type, and lab</strong> — target 5% vs 15% industry average</li>
+      <li><strong>Add progressive-lens quality protocol</strong> — growing from 18% to 22% raises remake risk</li>
+      <li><strong>Find a second acetate supplier</strong> — single Italian factory is a supply chain single point of failure</li>
+      <li><strong>Build AI glasses quality framework before launch</strong> — electronics and data-privacy requirements are new territory</li>
+    </ul>
+  </div>
+  <div class="osec">
+    <div class="ostag">Sources</div><div class="ostit">Primary Sources</div>
+    <div class="tools"><span class="ttag">Warby Parker 10-K FY2025</span><span class="ttag">Warby Parker 10-Q Q1 2026</span><span class="ttag">Q1 2026 Earnings Call</span><span class="ttag">The Vision Council 2024</span><span class="ttag">Capacity Modeling</span><span class="ttag">Demand Forecasting</span><span class="ttag">Postponement Strategy</span></div>
+  </div>
+</div>
+</div>
+
+<!-- ════════ ACME MEDICAL IMAGING ════════ -->
+<div id="ov-acme" class="ov">
+<button class="cbtn" onclick="closeOv()">← Back</button>
+<div class="oh" style="background:linear-gradient(155deg,#1a0000 0%,#080808 60%)">
+  <div class="otag" style="color:var(--r)">Stage-Gate · CPM · RACI · Product Development Operations</div>
+  <div class="oname">Acme Medical Imaging</div>
+  <div class="ohead">A nine-month WiMAX medical device development collapsed when a mid-project chipset pivot reset 16-week lead times with no impact model, no CPM schedule, and no decision rights framework.</div>
+  <div class="omets">
+    <div class="omet"><div class="omn" style="color:var(--r)">16wk</div><div class="oml">Procurement Lead Time Reset</div></div>
+    <div class="omet"><div class="omn" style="color:var(--g)">5</div><div class="oml">Stage Gates Designed</div></div>
+    <div class="omet"><div class="omn" style="color:var(--w)">4</div><div class="oml">Siloed Locations</div></div>
+    <div class="omet"><div class="omn" style="color:var(--r)">2–3mo</div><div class="oml">Schedule Recovery Possible</div></div>
+  </div>
+</div>
+<div class="obody">
+  <div class="osec">
+    <div class="ostag">Context</div>
+    <div class="ostit">First-Mover Advantage in WiMAX Medical Imaging — Lost to Process Failure</div>
+    <div class="otxt">
+      <p>Acme Medical Imaging produced DICOM-based wireless imaging products competing against GE, Siemens, and Philips. WiMAX (IEEE 802.16) represented a critical first-mover opportunity — the company reaching market first would lock in early adopters and set pricing benchmarks. Nine months into development, the CEO unilaterally mandated a switch from U.S. to Taiwanese chipsets with full architectural board separation — no cross-functional impact review, no CPM model, no change impact assessment.</p>
+      <p>The redesign reset supplier qualification (4–6 weeks), parts procurement (up to 16 weeks), stencils, kitting, and assembly tooling — cascading through a timeline that was already arithmetically impossible: the CEO had demanded a 20% assembly cost reduction with a 2-month redesign deadline while original parts carried 16-week lead times.</p>
+    </div>
+    <div class="insight">Acme confused flexibility with agility. Flexibility means anything can change at any time. Agility means executing fast without losing momentum — which requires operational unity and rapid resource reallocation. Acme had neither.</div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Root Causes</div>
+    <div class="ostit">Three Structural Failures Behind the Timeline Collapse</div>
+    <table class="ctbl">
+      <thead><tr><th>Failure</th><th>Mechanism</th><th>Consequence</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>No stage gates</td><td>No cross-functional sign-off required before design changes</td><td>CEO chipset pivot went unchallenged until damage was done</td></tr>
+        <tr><td>No CPM schedule</td><td>No task dependencies mapped, no critical path identified</td><td>No one could quantify the 16-week procurement reset before it was approved</td></tr>
+        <tr class="hlrow"><td>No RACI</td><td>CEO making individual design and supplier decisions</td><td>Decision bottlenecks across four geographically dispersed teams; engineers designed for features, not cost, because they received no cost targets</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="osec">
+    <div class="ostag">Stage-Gate Design</div>
+    <div class="ostit">Five Gates With a Change Impact Assessment Requirement</div>
+    <div class="flow">
+      <div class="fstep"><div class="fsn">Gate 1</div><div class="fsname">Concept</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Gate 2</div><div class="fsname">Feasibility</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Gate 3</div><div class="fsname">Design Freeze</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Gate 4</div><div class="fsname">Validation</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Gate 5</div><div class="fsname">Launch</div></div>
+    </div>
+    <div class="otxt"><p>The critical gate is <strong>Design Freeze (Gate 3)</strong>: any post-freeze design change must pass a formal Change Impact Assessment covering schedule, cost, supplier, and inventory implications before CEO approval. A gate review at Design Freeze would have revealed that the Taiwanese chipset could be integrated into the existing board architecture — achieving the CEO's strategic goal without a full redesign and recovering an estimated <strong>2–3 months of schedule</strong>.</p></div>
+    <table class="ctbl">
+      <thead><tr><th>Gate</th><th>Criteria</th><th>Acme Failure</th><th>Fix</th></tr></thead>
+      <tbody>
+        <tr><td>Concept</td><td>Chipset selection, cost model</td><td>CEO chose chipset informally</td><td>Formal supplier review at gate</td></tr>
+        <tr><td>Feasibility</td><td>Cost targets to engineering</td><td>No cost targets given</td><td>Gate blocks without cost sign-off</td></tr>
+        <tr class="hlrow"><td>Design Freeze</td><td>CPM baseline locked</td><td>CEO redesigned boards at month 9</td><td>Change Impact Assessment required</td></tr>
+        <tr><td>Validation</td><td>Assembly cost confirmed</td><td>Costs exceeded 20% target late</td><td>Cost roll-up reviewed at gate</td></tr>
+        <tr><td>Launch</td><td>Schedule confirmed to VARs</td><td>Sales over-promised delivery</td><td>Ops sign-off before sales commits</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="osec">
+    <div class="ostag">RACI Framework</div>
+    <div class="ostit">Decision Rights Redesigned to Eliminate the CEO Bottleneck</div>
+    <ul class="clist">
+      <li class="active"><strong>CEO</strong> — strategy and gate approvals only; not individual design or supplier decisions</li>
+      <li class="active"><strong>CTO/Design Lead</strong> — board architecture within approved cost parameters</li>
+      <li><strong>VP Operations</strong> — supply chain and assembly schedule; owns the CPM</li>
+      <li><strong>Sales</strong> — customer commitments require operations sign-off before they are made</li>
+    </ul>
+  </div>
+  <div class="osec">
+    <div class="ostag">Source</div><div class="ostit">Original Analysis — Referenced Case</div>
+    <div class="tools"><span class="ttag">Stage-Gate (Cooper 2001)</span><span class="ttag">CPM (PMI PMBOK 7th ed.)</span><span class="ttag">RACI Framework</span><span class="ttag">Strategic Agility (Doz & Kosonen 2008)</span><span class="ttag">Ivey Case 908D04</span></div>
+  </div>
+</div>
+</div>
+
+<!-- ════════ HALLORAN METALS ════════ -->
+<div id="ov-halloran" class="ov">
+<button class="cbtn" onclick="closeOv()">← Back</button>
+<div class="oh" style="background:linear-gradient(155deg,#00101a 0%,#080808 60%)">
+  <div class="otag" style="color:var(--b)">Distributed Inventory · Customer Profitability · Service Center Strategy</div>
+  <div class="oname">Halloran Metals</div>
+  <div class="ohead">Operating profit dropped 70% in a single year — not because the strategy was wrong, but because the operations hadn't been optimized around it.</div>
+  <div class="omets">
+    <div class="omet"><div class="omn" style="color:var(--b)">70%</div><div class="oml">Profit Drop (1 Year)</div></div>
+    <div class="omet"><div class="omn" style="color:var(--g)">$170M</div><div class="oml">Annual Sales</div></div>
+    <div class="omet"><div class="omn" style="color:var(--w)">40%</div><div class="oml">Revenue from Sub-$20K Accounts</div></div>
+    <div class="omet"><div class="omn" style="color:var(--r)">7</div><div class="oml">Distributed Warehouses</div></div>
+  </div>
+</div>
+<div class="obody">
+  <div class="osec">
+    <div class="ostag">Context</div>
+    <div class="ostit">The Steel Service Center That Wins By Solving Problems Nobody Else Wants</div>
+    <div class="otxt">
+      <p>Halloran Metals buys steel and aluminum from large mills in bulk and resells in smaller amounts to ~10,000 customers across the northeastern U.S., with seven warehouses and a competitive advantage of overnight delivery. Their salespeople do not pursue a customer's biggest, easiest order — they ask what the biggest problem is: the hard-to-find product, the rush order, the thing no one else wants to deal with. By 2001, that niche strategy had built $170M in annual sales — but the 2001 recession exposed structural inefficiencies the volume had been hiding.</p>
+    </div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Supply Chain Architecture</div>
+    <div class="ostit">Distributed Inventory With Worcester Hub Pooling</div>
+    <div class="otxt"><p>Halloran uses a <strong>distributed inventory model with pooling at the center</strong>. Each branch specializes in certain product lines. Worcester acts as a hub — processing flat-rolled steel and running an overnight shuttle that allows branches to exchange inventory. This is more expensive than a single central warehouse but enables overnight delivery across a wide geography without requiring each branch to carry a full product range. The Worcester shuttle creates the service level that justifies the premium.</p></div>
+    <table class="ctbl">
+      <thead><tr><th>Model</th><th>Halloran (distributed)</th><th>Allied Steel (centralized)</th></tr></thead>
+      <tbody>
+        <tr><td>Customers</td><td>~10,000 small/mid</td><td>~3,000 large OEM</td></tr>
+        <tr><td>Delivery</td><td>Overnight</td><td>3–5 days</td></tr>
+        <tr><td>Inventory</td><td>Branch-specialized + shuttle pooling</td><td>Centralized, deep</td></tr>
+        <tr><td>2001 Net Profit</td><td>~$2M (est.)</td><td>($44K)</td></tr>
+        <tr class="hlrow"><td>Asset Base</td><td>Relatively light</td><td>$29.5M net PP&E</td></tr>
+      </tbody>
+    </table>
+    <div class="insight">Allied's centralized model collapsed in the 2001 recession — heavy fixed investment in processing equipment became a burden when volume fell. Halloran's lighter asset base held up better. In a recession, customers want to carry less inventory and buy smaller amounts more frequently — exactly Halloran's strength.</div>
+  </div>
+  <div class="osec">
+    <div class="ostag">The Core Problem</div>
+    <div class="ostit">40% of Revenue From Accounts That Are Likely Unprofitable After Fulfillment Cost</div>
+    <div class="otxt"><p>Small accounts under $20K/year make up 40% of revenue but require the same truck trips, sales visits, and warehouse handling as large accounts — at far lower revenue per order. The multi-warehouse structure makes costs hard to cut quickly. When volume drops in a recession, the fixed cost of serving the long tail of small accounts compresses margins disproportionately.</p></div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Recommendations</div>
+    <div class="ostit">Four Operational Levers in Priority Order</div>
+    <table class="ctbl">
+      <thead><tr><th>Recommendation</th><th>Problem It Solves</th><th>Supply Chain Impact</th><th>Timeline</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>Customer profitability analysis + minimum order policies</td><td>Unprofitable small accounts</td><td>Fuller trucks, lower cost-per-delivery</td><td>90 days</td></tr>
+        <tr><td>Measure and leverage the Worcester shuttle</td><td>Invisible cost center</td><td>Better per-branch inventory decisions</td><td>60 days</td></tr>
+        <tr><td>Expand flat-roll processing at Worcester</td><td>Processing gap as mills pull back</td><td>Value-added revenue; no new SC infrastructure</td><td>3–6 months</td></tr>
+        <tr><td>Pause expansion; accelerate Binghamton specialization</td><td>Capital constraint + cash drain</td><td>Reduces shuttle dependency at new branch</td><td>Immediate</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="osec">
+    <div class="ostag">Source</div><div class="ostit">Original Analysis — Referenced Case</div>
+    <div class="tools"><span class="ttag">Inventory Pooling</span><span class="ttag">Distributed vs Centralized SC</span><span class="ttag">Customer Profitability</span><span class="ttag">GMROI</span><span class="ttag">HBS Case 683-062 (Shapiro)</span></div>
+  </div>
+</div>
+</div>
+
+<!-- ════════ WEST MARINE ════════ -->
+<div id="ov-westmarine" class="ov">
+<button class="cbtn" onclick="closeOv()">← Back</button>
+<div class="oh" style="background:linear-gradient(155deg,#001818 0%,#080808 60%)">
+  <div class="otag" style="color:var(--gr)">CPFR · Multi-Echelon Replenishment · Supply Chain Turnaround · Stanford GSB</div>
+  <div class="oname">West Marine</div>
+  <div class="ohead">From 25% out-of-stocks to a 96% in-stock goal — CPFR with 350+ vendors rebuilt the supply chain that an acquisition nearly destroyed, and the Boat U.S. acquisition now tests whether the infrastructure is genuinely scalable.</div>
+  <div class="omets">
+    <div class="omet"><div class="omn" style="color:var(--gr)">96%</div><div class="oml">In-Stock Goal (Pilot)</div></div>
+    <div class="omet"><div class="omn" style="color:var(--g)">85%</div><div class="oml">Forecast Accuracy</div></div>
+    <div class="omet"><div class="omn" style="color:var(--w)">98%</div><div class="oml">Replenishment Automated</div></div>
+    <div class="omet"><div class="omn" style="color:var(--r)">25%</div><div class="oml">Peak Out-of-Stock (1998)</div></div>
+  </div>
+</div>
+<div class="obody">
+  <div class="osec">
+    <div class="ostag">The E&B Marine Collapse</div>
+    <div class="ostit">Three Structural Failures Behind the 1998 Supply Chain Crisis</div>
+    <div class="otxt"><p>West Marine acquired E&B Marine in 1996, adding 63 stores. Out-of-stocks peaked at 25%, sales dropped ~8%, and EPS fell from $0.86 to $0.06. The root causes were not the acquisition itself — they were three pre-existing structural failures that the acquisition volume exposed:</p></div>
+    <table class="ctbl">
+      <thead><tr><th>Failure</th><th>Mechanism</th><th>Impact</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>Disconnected planning and replenishment</td><td>Forecasts made but never acted on; store-level exceptions drove purchasing</td><td>Misaligned purchase orders, expensive rush shipments</td></tr>
+        <tr><td>Incompatible backend systems</td><td>JDA ASR and AWR completely disconnected; E&B added a second incompatible database</td><td>Store demand data never reached DC planning</td></tr>
+        <tr><td>DC capability gap</td><td>New Rock Hill DC was 7× larger than Charlotte; organization lacked skills to ramp up</td><td>Simultaneous operations transition + acquisition volume = 25% out-of-stock</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="osec">
+    <div class="ostag">The CPFR Solution</div>
+    <div class="ostit">Retailer-as-Hub: One 52-Week Rolling Forecast Shared With All Vendors</div>
+    <div class="otxt">
+      <p>West Marine implemented CPFR (Collaborative Planning, Forecasting, and Replenishment) using Option A — retailer-as-hub — because it could scale across 1,000 vendors with different IT capabilities, reduced the bullwhip effect by tying replenishment to consumer sell-through rather than wholesale order history, and allowed vendor visibility into production lead times that West Marine's demand spikes had made impossible.</p>
+      <p>The multi-echelon solution combined JDA Intellect seasonal profiling, Advanced Planning, store-level forecasting, and DC aggregation into one interface. Replenishment shifted from reactive to proactive — <strong>98% of inventory replenishment became automated</strong>.</p>
+    </div>
+    <div class="rgrid">
+      <div class="rcard"><div class="rn" style="color:var(--gr)">75%→96%</div><div class="rl">In-stock rate improvement in CPFR pilot stores</div></div>
+      <div class="rcard"><div class="rn" style="color:var(--g)">30%→50%</div><div class="rl">On-time vendor shipments (target 90%)</div></div>
+      <div class="rcard"><div class="rn" style="color:var(--b)">17%</div><div class="rl">Interlux sales growth YoY in CPFR pilot</div></div>
+    </div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Boat U.S. Acquisition Risk</div>
+    <div class="ostit">60-Day Integration Before Peak Season — What Has to Work</div>
+    <div class="otxt"><p>Boat U.S. brings $100M in catalog/Internet sales and 500,000 loyalty members, but only 10,000 SKU overlap with West Marine's 50,000-SKU catalog. Vendor EDI adoption: 30% vs West Marine's ~85%. No CPFR relationships. The Hagerstown, MD DC has RFID capability but layout limitations. Edmondson's 60-day "integrate before peak" requirement is achievable only because West Marine's rebuilt infrastructure makes it possible in ways it wasn't in 1996.</p></div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Recommendations</div>
+    <div class="ostit">Four Priorities for Scaling the Infrastructure</div>
+    <ul class="clist">
+      <li class="active"><strong>Tiered CPFR rollout</strong> — Tier 1 (top 50 vendors, 80% of volume): full CPFR with 52-week forecasts. Tier 2 (next 100): EDI with monthly reviews. Tier 3 (remaining ~850): EDI or streamlined ordering.</li>
+      <li class="active"><strong>Migrate Boat U.S. onto West Marine's infrastructure within 60 days</strong> — map SKUs to 24 product cluster categories; deploy EDI ASNs for all Boat vendors by day 30; Hagerstown on JDA WMS by day 60.</li>
+      <li><strong>VMI pilot for peak seasonal categories</strong> — bottom paints, safety equipment, anchor/dock hardware. Shifts production-planning ownership to manufacturers who can act on real demand signals.</li>
+      <li><strong>Scale category management pods and train Hagerstown DC staff</strong> — replicate Rock Hill's 3× carton utilization improvement at Hagerstown before first peak season as combined entity.</li>
+    </ul>
+  </div>
+  <div class="osec">
+    <div class="ostag">Source</div><div class="ostit">Original Analysis — Referenced Case</div>
+    <div class="tools"><span class="ttag">CPFR (VICS Standard)</span><span class="ttag">Multi-Echelon Replenishment</span><span class="ttag">VMI</span><span class="ttag">Bullwhip Effect</span><span class="ttag">Stanford GSB Case GS-34 (Demand)</span></div>
+  </div>
+</div>
+</div>
+
+<!-- ════════ KL WORLDWIDE ════════ -->
+<div id="ov-klworldwide" class="ov">
+<button class="cbtn" onclick="closeOv()">← Back</button>
+<div class="oh" style="background:linear-gradient(155deg,#100018 0%,#080808 60%)">
+  <div class="otag" style="color:var(--p)">IT-SC Alignment · IRM Framework · ERP · Data Warehouse Strategy</div>
+  <div class="oname">KL Worldwide Enterprises</div>
+  <div class="ohead">$311M private-label channel running blind — no cross-facility supply chain visibility across four global manufacturing and distribution centers because IT is managed as a support function, not a strategic one.</div>
+  <div class="omets">
+    <div class="omet"><div class="omn" style="color:var(--p)">$1.038B</div><div class="oml">FY2005 Revenue</div></div>
+    <div class="omet"><div class="omn" style="color:var(--g)">$311M</div><div class="oml">Private Label (Blind)</div></div>
+    <div class="omet"><div class="omn" style="color:var(--w)">+211%</div><div class="oml">Private Label Growth</div></div>
+    <div class="omet"><div class="omn" style="color:var(--r)">4</div><div class="oml">M&D Centers, No SCM Visibility</div></div>
+  </div>
+</div>
+<div class="obody">
+  <div class="osec">
+    <div class="ostag">The Strategic Misalignment</div>
+    <div class="ostit">McFarlan's IRM Framework: KL's IT Is "Factory/Support" When the Business Needs "Strategic"</div>
+    <div class="otxt">
+      <p>KL Worldwide is a $1B Boston-based sports apparel company with four manufacturing and distribution centers across the U.S., Brazil, India, and Singapore. Its private-label channel grew 211% to $311M — its fastest-growing revenue stream. But the IT infrastructure managing that channel is misaligned: SAP SCM is only deployed in Brazil and Singapore. The U.S. and India facilities run on legacy two-tier systems with no cross-facility visibility.</p>
+      <p>Using McFarlan's IRM framework, KL's IT falls in the <strong>Factory/Support quadrant</strong> — high operational dependence on existing systems, low strategic impact from new IT investments. The business demands the Strategic quadrant — where IT enables competitive differentiation and new market moves. That gap is why the private-label channel is running blind.</p>
+    </div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Core Process Analysis</div>
+    <div class="ostit">Four Processes, Four Alignment Gaps</div>
+    <table class="ctbl">
+      <thead><tr><th>Core Process</th><th>Current IT</th><th>IRM Alignment</th><th>Critical Gap</th></tr></thead>
+      <tbody>
+        <tr><td>Product Design & Dev.</td><td>Manual handoffs, no PLM</td><td>Misaligned</td><td>Rework and manufacturability failures across 4 M&D centers</td></tr>
+        <tr class="hlrow"><td>Manufacturing & SCM</td><td>SAP (BR/SG); legacy (US/IN)</td><td>Partial</td><td>No cross-facility data — $311M private-label channel blind</td></tr>
+        <tr><td>Order Fulfillment</td><td>Oracle ERP + partial SAP</td><td>Partial</td><td>Sales VPs get month-end printed reports; no real-time forecasting</td></tr>
+        <tr><td>Sales & Marketing</td><td>Oracle CRMS; aging eCommerce</td><td>Partial</td><td>No BI layer; no product configurator; ceding ground to Nike and Dell</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="osec">
+    <div class="ostag">The Most Critical Gap</div>
+    <div class="ostit">No Enterprise Data Warehouse — The Absence That Drives All Underperformance</div>
+    <div class="otxt"><p>KL has Oracle ERP, SAP SCM, Microsoft stack, IBM SurePOS, and Oracle CRMS — but no EDW or BI layer to unify them. Sales VPs receive month-end printed reports. Forecasting is impossible. The absence of an EDW is not one gap among many — it is the root cause of the disconnection between all other systems. Every process gap in the table above is partly a consequence of the same missing integration layer.</p></div>
+    <div class="insight">Brazil and Singapore are already fully on SAP — they are the proof of concept. The path to real-time SCM across all four M&D centers is replication, not reinvention. The technical approach is proven; the challenge is change management and timeline.</div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Investment Roadmap</div>
+    <div class="ostit">Four Priorities Sequenced by Dependency</div>
+    <table class="ctbl">
+      <thead><tr><th>Priority</th><th>Initiative</th><th>Horizon</th><th>Business Outcome</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>1</td><td>Complete SAP — U.S. & India M&D</td><td>Months 1–18</td><td>Real-time SCM; removes $311M private-label blind spot</td></tr>
+        <tr><td>2</td><td>Enterprise Data Warehouse + BI</td><td>Months 6–24</td><td>Replaces printed reports; decision support for CFO and VPs; SOX compliance</td></tr>
+        <tr><td>3</td><td>Replatform eCommerce</td><td>Months 9–18</td><td>Design-your-own configurator; protect and grow $156M web channel vs Nike/Dell</td></tr>
+        <tr><td>4</td><td>SD-WAN + Enterprise Portal</td><td>Months 12–24</td><td>Eliminates VPN failures and collaboration silos; supports M&A integration</td></tr>
+      </tbody>
+    </table>
+    <div class="otxt" style="margin-top:1rem"><p>Priority 1 is non-negotiable — SAP completion is a prerequisite for the EDW, and the EDW is a prerequisite for BI. Priorities 3 and 4 can run in parallel with Priority 2 after SAP is stabilized. The sequencing is driven by dependency, not urgency.</p></div>
+  </div>
+  <div class="osec">
+    <div class="ostag">Forces at Play</div>
+    <div class="ostit">EPSS Framework: Four Environmental Pressures Converging</div>
+    <ul class="clist">
+      <li class="active"><strong>Economic</strong> — Chinese rivals undercutting margins; internet enabling KL look-alikes at lower price points</li>
+      <li class="active"><strong>Process</strong> — incompatible IT systems blocking cross-facility SCM coordination at exactly the moment private-label demands it</li>
+      <li><strong>Social</strong> — acquisition growth outpacing IT integration capacity; four M&D centers unable to collaborate</li>
+      <li><strong>Systems</strong> — SAP only in Brazil/Singapore; Oracle ERP over-customized; no EDW; VPN failures; aging eCommerce</li>
+    </ul>
+  </div>
+  <div class="osec">
+    <div class="ostag">Source</div><div class="ostit">Original Analysis — Referenced Case</div>
+    <div class="tools"><span class="ttag">McFarlan IRM Framework (1984)</span><span class="ttag">Competing on Analytics (Davenport 2007)</span><span class="ttag">Porter Value Chain (1985)</span><span class="ttag">SAP SCM</span><span class="ttag">EDW Strategy</span><span class="ttag">Ivey/NEU Case 905E23 (Kesner)</span></div>
+  </div>
+</div>
+</div>
 <script>
-function openOv(id){
-  var ov=document.getElementById('ov-'+id);
-  if(!ov){console.error('overlay not found: ov-'+id);return;}
-  document.getElementById('mv').style.display='none';
+// ── URL ROUTING ──────────────────────────────────────────────
+// Maps URL slugs to overlay IDs
+const routeMap = {
+  'ignisai': 'ignisai',
+  'sentinelpay': 'sentinelpay',
+  'fedaudit': 'fedaudit',
+  'p2p-lending': 'p2p',
+  'nba': 'nba',
+  'kepler': 'kepler',
+  'crowdpulse': 'crowdpulse',
+  'harbor': 'harbor',
+  'midatlantic': 'midatlantic',
+  'rougir': 'rougir',
+  'dhl': 'dhl',
+  'tournament': 'tournament',
+  'montecarlo': 'montecarlo',
+  'cemex': 'cemex',
+  'wolters-kluwer': 'wolterskluwer',
+  'carmax': 'carmax',
+  'clearpath': 'clearpath',
+  'warby-parker': 'warby',
+  'acme': 'acme',
+  'halloran': 'halloran',
+  'west-marine': 'westmarine',
+  'kl-worldwide': 'klworldwide'
+};
+
+function openOv(id) {
+  var ov = document.getElementById('ov-' + id);
+  if (!ov) { console.error('overlay not found: ov-' + id); return; }
+  document.getElementById('mv').style.display = 'none';
   ov.classList.add('on');
-  ov.scrollTop=0;
-  window.scrollTo(0,0);
-  setTimeout(function(){
-    ov.querySelectorAll('.bfill').forEach(function(b){
-      b.style.width=(b.dataset.w||0)+'%';
+  ov.scrollTop = 0;
+  window.scrollTo(0, 0);
+  // Push URL
+  var slug = Object.keys(routeMap).find(function(k){ return routeMap[k] === id; }) || id;
+  history.pushState({ overlay: id }, '', '/' + slug);
+  setTimeout(function() {
+    ov.querySelectorAll('.bfill').forEach(function(b) {
+      b.style.width = (b.dataset.w || 0) + '%';
     });
-  },500);
+  }, 500);
 }
-function closeOv(){
-  document.querySelectorAll('.ov').forEach(function(o){o.classList.remove('on')});
-  document.getElementById('mv').style.display='block';
-  window.scrollTo(0,0);
+
+function closeOv() {
+  document.querySelectorAll('.ov').forEach(function(o) { o.classList.remove('on'); });
+  document.getElementById('mv').style.display = 'block';
+  window.scrollTo(0, 0);
+  history.pushState({}, '', '/');
 }
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeOv()});
+
+// Handle browser back/forward
+window.addEventListener('popstate', function(e) {
+  if (e.state && e.state.overlay) {
+    var ov = document.getElementById('ov-' + e.state.overlay);
+    if (ov) {
+      document.getElementById('mv').style.display = 'none';
+      document.querySelectorAll('.ov').forEach(function(o) { o.classList.remove('on'); });
+      ov.classList.add('on');
+      ov.scrollTop = 0;
+      window.scrollTo(0, 0);
+    }
+  } else {
+    document.querySelectorAll('.ov').forEach(function(o) { o.classList.remove('on'); });
+    document.getElementById('mv').style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+});
+
+// On page load, check if URL has a slug and open that overlay
+(function() {
+  var path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+  if (path && routeMap[path]) {
+    openOv(routeMap[path]);
+  }
+})();
+
+document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeOv(); });
 </script>
 <!-- CEMEX AI AT SCALE -->
 <div id="ov-cemex" class="ov">
