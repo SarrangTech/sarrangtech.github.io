@@ -103,6 +103,11 @@ section{border-bottom:1px solid var(--bd)}
 .ph{font-size:13px;font-weight:500;line-height:1.4;margin-bottom:10px}
 .pd{font-size:12px;color:#807870;line-height:1.8;margin-bottom:16px;flex:1}
 .plink{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:auto;padding-top:12px;border-top:1px solid var(--bd);display:flex;align-items:center;gap:8px;transition:gap .2s}
+.psig{display:flex;flex-wrap:wrap;gap:7px 15px;margin-top:14px}
+.sc{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:#8a8278;display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.sc::before{content:'';width:5px;height:5px;background:var(--mu);transform:rotate(45deg);flex:none}
+.sc.hot{color:var(--w)}
+.sc.hot::before{background:var(--g)}
 .pc:hover .plink{gap:14px}
 .cr .pt,.cr .plink{color:var(--r)}.cr::after{background:var(--r)}.cr .ph{color:var(--r)}
 .cg .pt,.cg .plink{color:var(--g)}.cg::after{background:var(--g)}.cg .ph{color:var(--g)}
@@ -426,7 +431,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">97.7% recall — zero missed fires in network-isolated UAV conditions</div>
       <p class="pd">MobileNetV2 on 19,913 drone images. Chose 14MB model over 88MB alternative — intentional 1% accuracy tradeoff for 4× edge footprint reduction. IEEE published at AWS/Microsoft/IBM-backed conference.</p>
       <div class="pills"><span class="pill">MobileNetV2</span><span class="pill">Docker</span><span class="pill">IEEE</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">IEEE Published</span><span class="sc">5 sections</span><span class="sc">GitHub</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cg" onclick="openOv('sentinelpay')">
       <div class="pt">ML · Fraud Detection · Ensemble · Real-Time API</div>
@@ -434,7 +440,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">~$67,896 fraud prevented — 92% recall at 0.172% fraud rate</div>
       <p class="pd">Solved model collapse at extreme imbalance using SMOTE-ENN + class weight tuning + threshold optimization. XGBoost/LightGBM/CatBoost ensemble deployed via FastAPI + Docker.</p>
       <div class="pills"><span class="pill">XGBoost</span><span class="pill">SMOTE-ENN</span><span class="pill">FastAPI</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">3 sections</span><span class="sc">GitHub</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cgr" onclick="openOv('fedaudit')">
       <div class="pt">Explainable AI · Public Sector · SHAP</div>
@@ -442,7 +449,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">2–3 weeks → &lt;1 hour audit triage on $41.43T DoD obligations</div>
       <p class="pd">Caught 86 target leakage instances inflating accuracy 90%+. Rebuilt with 67 clean features. XGBoost + SHAP + live 6-tab React dashboard deployed on Vercel.</p>
       <div class="pills"><span class="pill">XGBoost</span><span class="pill">SHAP</span><span class="pill">React 18</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">Live dashboard</span><span class="sc hot">9-section deep-dive</span><span class="sc">GitHub</span><span class="sc">5 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cb" onclick="openOv('p2p')">
       <div class="pt">Explainable ML · Credit Risk · Springer / SCOPUS</div>
@@ -450,7 +458,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">95% precision — 179,235 loans, 61.6% missing values</div>
       <p class="pd">Tiered imputation preserved 98% signal. LightGBM beat XGBoost 10× on RMSE stability (0.03 vs 0.30). EBM + SHAP + LIME explainability stack. Published Springer LNNS.</p>
       <div class="pills"><span class="pill">LightGBM</span><span class="pill">EBM</span><span class="pill">Springer</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">Springer · SCOPUS</span><span class="sc">4 sections</span><span class="sc">GitHub</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cp" onclick="openOv('nba')">
       <div class="pt">Integer Programming · Stochastic Optimization</div>
@@ -458,7 +467,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">474.44 expected value — IP solved across 256 playoff calendars</div>
       <p class="pd">4⁴=256 Round 1 scenarios. Separate binary IP per scenario. 6-factor objective: team interest, competitiveness, slot value, game probability, round weight, leverage.</p>
       <div class="pills"><span class="pill">PuLP</span><span class="pill">Binary IP</span><span class="pill">256 Scenarios</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">4 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cr" onclick="openOv('kepler')">
       <div class="pt">Ensemble ML · Astronomy · EDA-Driven</div>
@@ -466,7 +476,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">&lt;1% false positives — 7% over RF on 9,500 Kepler objects</div>
       <p class="pd">EDA revealed multicollinearity + high dimensionality → ruled out parametric models. 4-model Voting Classifier (XGB + LGB + AdaBoost + RF) across 49 features.</p>
       <div class="pills"><span class="pill">XGBoost</span><span class="pill">LightGBM</span><span class="pill">Voting Classifier</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">3 sections</span><span class="sc">GitHub</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cb" onclick="openOv('crowdpulse')">
       <div class="pt">NLP · Sentiment Analysis · Time-Series ML · Plotly Dash</div>
@@ -474,7 +485,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">68.7% F1 — does Twitter mood predict next-day stock direction?</div>
       <p class="pd">End-to-end pipeline across 20 tickers, 5 years. Synthetic tweets calibrated to real financial Twitter distributions. Chronological holdout. LR beats RF. Bloomberg Terminal-inspired live dashboard deployed on Vercel.</p>
       <div class="pills"><span class="pill">VADER</span><span class="pill">Logistic Regression</span><span class="pill">Plotly Dash</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">Live dashboard</span><span class="sc hot">9-section deep-dive</span><span class="sc">GitHub</span><span class="sc">2 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cgr" onclick="openOv('databricks')">
       <div class="pt">Databricks · Medallion Architecture · MLflow · Delta Lake · Unity Catalog</div>
@@ -482,7 +494,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">0.9585 ROC-AUC — end-to-end Bronze → Silver → Gold → ML in 18 minutes</div>
       <p class="pd">Auto Loader ingestion → PySpark Medallion transforms → GradientBoosting with MLflow tracking → Unity Catalog model registry → batch scoring. 284,807 transactions, 0.17% fraud rate. All 4 tasks orchestrated as a single Databricks Job.</p>
       <div class="pills"><span class="pill">Databricks</span><span class="pill">Delta Lake</span><span class="pill">MLflow</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">10-section deep-dive</span><span class="sc">GitHub</span><span class="sc">4 screenshots</span><span class="sc">3 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
   </div>
 </section>
@@ -497,7 +510,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">$5,701,950 optimal profit — 6-zone warehouse LP with shadow price analysis</div>
       <p class="pd">LP space allocation across Receiving, Storage, Picking, VAS, Office. Sensitivity analysis: expanding to 140K sq ft yields $1.23M more. Shadow price: $71.75/sqft on receiving constraint.</p>
       <div class="pills"><span class="pill">LP</span><span class="pill">Excel Solver</span><span class="pill">Sensitivity Analysis</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">5 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cgr" onclick="openOv('midatlantic')">
       <div class="pt">Linear Programming · Energy Mix · Environmental Constraints</div>
@@ -505,7 +519,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">$1,798,000/week minimum cost — 5-source generation mix with CO₂ cap</div>
       <p class="pd">Minimization LP across coal, gas, nuclear, wind, solar. CO₂ shadow price $52/ton. Tighter regulation by 2,000 tons adds $104K/week. Python/PuLP with dual value interpretation.</p>
       <div class="pills"><span class="pill">LP</span><span class="pill">PuLP</span><span class="pill">Energy Policy</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">4 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cp" onclick="openOv('rougir')">
       <div class="pt">LP · Make vs Outsource · Manufacturing</div>
@@ -513,7 +528,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">$584,473 optimal production cost — make-vs-outsource LP across 2 shifts</div>
       <p class="pd">Per-unit cost derived from raw material inputs and shift-specific labor rates. LP determines optimal allocation of face/body/hand cream production across Shift 1 and 2 given capacity constraints.</p>
       <div class="pills"><span class="pill">LP</span><span class="pill">Make vs Buy</span><span class="pill">Excel Solver</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">4 sections</span><span class="sc">2 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cb" onclick="openOv('dhl')">
       <div class="pt">Transportation Network · Consolidation · India→Frankfurt</div>
@@ -521,7 +537,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">Hit >1,000kg tier (₹90 vs ₹130/kg) — road-routing consolidation across 3 Indian cities</div>
       <p class="pd">Optimized freight consolidation across Hyderabad, Bengaluru, Chennai to Frankfurt. Modeled delay risk explicitly: expected cost = air + road + (0.02 × penalty). Weekly total: ₹4,130,000.</p>
       <div class="pills"><span class="pill">Network Opt</span><span class="pill">Risk Modeling</span><span class="pill">Logistics</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">5 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cr" onclick="openOv('tournament')">
       <div class="pt">Integer Programming · Greedy Heuristic · Comparison</div>
@@ -529,7 +546,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">IP optimal 155.5 vs greedy 148.5 — 4.5% gap analysis across 6 teams</div>
       <p class="pd">Binary IP vs 2-pass greedy heuristic for 6-team basketball bracket. Both satisfy all constraints. Rigorous analysis of when heuristics beat exact solvers in time-critical scheduling.</p>
       <div class="pills"><span class="pill">Binary IP</span><span class="pill">Greedy</span><span class="pill">Comparison</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">4 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cg" onclick="openOv('montecarlo')">
       <div class="pt">Monte Carlo · DCF Valuation · Stochastic Simulation</div>
@@ -537,7 +555,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">Was $28/share justified? Stochastic DCF across 8 uncertain parameters</div>
       <p class="pd">Modeled Netscape 1995 IPO under uncertainty: revenue growth N(65%,5%), R&D triangular(32%,42%), market premium uniform(5%,10%), plus 5 more stochastic parameters. Quantified price-per-share distribution.</p>
       <div class="pills"><span class="pill">Monte Carlo</span><span class="pill">DCF</span><span class="pill">Python</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">4 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
   </div>
 </section>
@@ -554,7 +573,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">$30M value from 200+ production AI models — engagement, quality, latency, and cost tracked across 21 countries</div>
       <p class="pd">Analyzed how Cemex industrialized AI across the order-to-fulfillment process. Focused on KPI design for AI feature health, model drift management via MLOps, and the organizational structure needed to sustain interdependent production models at global scale. MIT CISR Working Paper No. 463.</p>
       <div class="pills"><span class="pill">AI Product KPIs</span><span class="pill">MLOps</span><span class="pill">MIT CISR</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">MIT CISR</span><span class="sc">6 sections</span><span class="sc">2 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cb" onclick="openOv('wolterskluwer')">
       <div class="pt">Data Monetization · Expert Solutions · Improve-Wrap-Sell</div>
@@ -562,7 +582,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">58% of €5.6B revenues from expert solutions — 20-year data monetization transformation from publisher to AI platform</div>
       <p class="pd">Applied the MIT CISR improve→wrap→sell framework to analyze WK's FCC division. Examined how feature-level engagement tracking, customer segmentation, and AI instrumentation translated operational data into monetizable expert solutions driving 8% organic growth. MIT CISR Working Paper No. 465.</p>
       <div class="pills"><span class="pill">Data Monetization</span><span class="pill">Improve-Wrap-Sell</span><span class="pill">MIT CISR</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">MIT CISR</span><span class="sc">6 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
     <div class="pc cgr" onclick="openOv('carmax')">
       <div class="pt">Capability Assessment · Data Maturity · Analytics Strategy</div>
@@ -570,7 +591,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">Advanced data science, foundational acceptable use — 4-dimension maturity gap analysis identifying the constraints on monetization potential</div>
       <p class="pd">Applied the MIT CISR Data Monetization Capability Assessment to CarMax's omni-channel transformation. Rated data management, platform, data science, and acceptable data use — and identified why Advanced data science paired with Foundational governance is the most strategically dangerous configuration. Based on Data Is Everybody's Business.</p>
       <div class="pills"><span class="pill">Capability Assessment</span><span class="pill">Data Strategy</span><span class="pill">MIT CISR</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">MIT CISR</span><span class="sc">5 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
   </div>
 </section>
@@ -585,7 +607,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">Dallas-Fort Worth costs $5.28T to reroute — not the highest-risk corridor by score</div>
       <p class="pd">Random Forest (90.3% LOOCV) + gravity model + NetworkX failure simulation across 134 U.S. freight corridors. $18.04T in freight analyzed. Live automated weekly digest deployed via GitHub Actions.</p>
       <div class="pills"><span class="pill">Random Forest</span><span class="pill">NetworkX</span><span class="pill">Census CFS API</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc hot">Live dashboard</span><span class="sc hot">Miro + Figma</span><span class="sc hot">18-section deep-dive</span><span class="sc">GitHub</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
 
     <div class="pc co" onclick="openOv('warby')">
@@ -594,7 +617,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">Two labs hit capacity at ~450 stores — 900-store target requires doubling lab network</div>
       <p class="pd">Lab-capacity constraint model quantifying the binding throughput ceiling in Warby Parker's vertical integration strategy. Demand forecasting framework + progressive-lens mix analysis. Q1 2026 10-Q sourced.</p>
       <div class="pills"><span class="pill">Capacity Modeling</span><span class="pill">Demand Planning</span><span class="pill">DTC Strategy</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">7 sections</span><span class="sc">2 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
 
     <div class="pc cr" onclick="openOv('acme')">
@@ -603,7 +627,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">A mid-project chipset pivot reset 16-week lead times — no one modeled the impact first</div>
       <p class="pd">Root cause analysis of a WiMAX medical device launch failure. Stage-Gate process design + CPM scheduling to prevent unilateral CEO decisions from cascading through procurement and assembly timelines.</p>
       <div class="pills"><span class="pill">Stage-Gate</span><span class="pill">CPM</span><span class="pill">RACI</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">5 sections</span><span class="sc">2 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
 
     <div class="pc cb" onclick="openOv('halloran')">
@@ -612,7 +637,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">40% of revenue from accounts under $20K/year — most are unprofitable after fulfillment cost</div>
       <p class="pd">Strategic and operational analysis of a steel service center facing a 70% profit drop. Distributed inventory vs centralized model comparison, Worcester shuttle economics, and customer profitability segmentation.</p>
       <div class="pills"><span class="pill">Inventory Pooling</span><span class="pill">Service Center</span><span class="pill">Profitability</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">5 sections</span><span class="sc">2 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
 
     <div class="pc cgr" onclick="openOv('westmarine')">
@@ -621,7 +647,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">In-stock from 75% to 96% — CPFR with 150 EDI vendors rebuilt a business E&B nearly destroyed</div>
       <p class="pd">Analysis of West Marine's supply chain transformation: multi-echelon JDA replenishment, CPFR rollout across 350+ vendors, and 60-day integration playbook for the Boat U.S. acquisition.</p>
       <div class="pills"><span class="pill">CPFR</span><span class="pill">Multi-Echelon</span><span class="pill">Acquisition</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">5 sections</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
 
     <div class="pc cp" onclick="openOv('klworldwide')">
@@ -630,7 +657,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="ph">$311M private-label channel blind — no cross-facility SCM visibility across 4 global M&D centers</div>
       <p class="pd">IT-supply chain alignment analysis using McFarlan's IRM framework. SAP vs Oracle ERP gap mapping, EDW investment roadmap, and prioritized 24-month implementation sequence for a $1B sports apparel company.</p>
       <div class="pills"><span class="pill">IRM Framework</span><span class="pill">SAP SCM</span><span class="pill">EDW</span></div>
-      <div class="plink">Open Case Study →</div>
+      <div class="psig"><span class="sc">6 sections</span><span class="sc">2 tables</span></div>
+      <div class="plink">Open full case study →</div>
     </div>
 
   </div>
