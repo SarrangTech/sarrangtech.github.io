@@ -1994,9 +1994,10 @@ window.addEventListener('popstate', function(e) {
   }
 });
 
-// On page load, check if URL has a slug and open that overlay
 (function() {
   var path = window.location.pathname.replace(/^\//, '').replace(/\/$/, '');
+  var r = new URLSearchParams(window.location.search).get('r');
+  if (r) path = r.replace(/^\//, '').replace(/\/$/, '');
   if (path && routeMap[path]) {
     openOv(routeMap[path]);
   }
