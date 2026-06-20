@@ -1455,110 +1455,374 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
   </div>
 </div>
 </div>
-<!-- ════════ CLEARPATH ANALYTICS ════════ -->
+<!-- ════════ CLEARPATH ANALYTICS — FULL OVERLAY ════════ -->
 <div id="ov-clearpath" class="ov">
 <button class="cbtn" onclick="closeOv()">← Back</button>
+
+<!-- HERO -->
 <div class="oh" style="background:linear-gradient(155deg,#001a0a 0%,#080808 60%)">
-  <div class="otag" style="color:var(--gr)">Geospatial ML · Network Analysis · Federal Data · Business Analytics Capstone</div>
+  <div class="otag" style="color:var(--gr)">Geospatial ML · Network Analysis · Federal Data · Business Analytics Capstone · MISM 6214</div>
   <div class="oname">ClearPath Analytics</div>
-  <div class="ohead">Ranked all 134 U.S. freight corridors by disruption risk — the highest-vulnerability corridor is not the most dangerous one to lose.</div>
+  <div class="ohead">Ranked all 134 U.S. freight corridors by disruption risk — from Miro process map to Figma brief to Random Forest classifier to live Streamlit dashboard. The highest-vulnerability corridor is not the most dangerous one to lose.</div>
   <div class="omets">
     <div class="omet"><div class="omn" style="color:var(--gr)">90.3%</div><div class="oml">RF LOOCV Accuracy</div></div>
     <div class="omet"><div class="omn" style="color:var(--g)">$18.04T</div><div class="oml">Freight Analyzed</div></div>
     <div class="omet"><div class="omn" style="color:var(--w)">$5.28T</div><div class="oml">DFW Rerouting Cost</div></div>
     <div class="omet"><div class="omn" style="color:var(--r)">134</div><div class="oml">CFS Areas Ranked</div></div>
-    <div class="omet"><div class="omn" style="color:var(--gr)">17,822</div><div class="oml">Corridor Pairs Modeled</div></div>
+    <div class="omet"><div class="omn" style="color:var(--b)">17,822</div><div class="oml">Corridor Pairs Modeled</div></div>
+    <div class="omet"><div class="omn" style="color:var(--p)">5</div><div class="oml">Key Findings</div></div>
   </div>
 </div>
+
 <div class="obody">
+
+  <!-- LIVE DASHBOARD -->
+  <div class="osec">
+    <div class="ostag" style="color:var(--gr)">Live Dashboard</div>
+    <div class="ostit">ClearPath Streamlit Dashboard — Interactive Supply Chain Risk Explorer</div>
+    <div class="iframewin">
+      <div class="iframebar">
+        <div class="iframedots"><span></span><span></span><span></span></div>
+        <div class="iframeurl">shreya2622-clearpath-analytics-dashboard-shreya-ijktnu.streamlit.app</div>
+        <a href="https://shreya2622-clearpath-analytics-dashboard-shreya-ijktnu.streamlit.app/" target="_blank" class="iframefull">Open Full ↗</a>
+      </div>
+      <iframe src="https://shreya2622-clearpath-analytics-dashboard-shreya-ijktnu.streamlit.app/" title="ClearPath Analytics Dashboard" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+      <div class="iframefooter">
+        <span>&#9679; Live — Python · Streamlit · GeoPandas · Plotly · NetworkX</span>
+        <a href="https://shreya2622-clearpath-analytics-dashboard-shreya-ijktnu.streamlit.app/" target="_blank">Open Full Screen →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIGMA BRIEF -->
+  <div class="osec">
+    <div class="ostag" style="color:var(--b)">Project Brief</div>
+    <div class="ostit">Figma Process Brief — How the Team Framed the Problem Before Writing a Line of Code</div>
+    <div class="iframewin">
+      <div class="iframebar">
+        <div class="iframedots"><span></span><span></span><span></span></div>
+        <div class="iframeurl">figma.com/board — Supply Chain Vulnerability Project Brief</div>
+        <a href="https://www.figma.com/board/6TWkFvmcqvBU3bpHF4cLHF/Supply-Chain-Vulnerability-%E2%80%94-Project-Brief?node-id=1-151&t=MNAH7lhjQ4CAgAXx-1" target="_blank" class="iframefull">Open Full ↗</a>
+      </div>
+      <iframe src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fboard%2F6TWkFvmcqvBU3bpHF4cLHF%2FSupply-Chain-Vulnerability-%E2%80%94-Project-Brief%3Fnode-id%3D1-151%26t%3DMNAH7lhjQ4CAgAXx-1" title="ClearPath Figma Brief" loading="lazy" allowfullscreen></iframe>
+      <div class="iframefooter">
+        <span>&#9679; Figma FigJam — Project framing, business question, operations map, risk cascade, analytics pipeline</span>
+        <a href="https://www.figma.com/board/6TWkFvmcqvBU3bpHF4cLHF/Supply-Chain-Vulnerability-%E2%80%94-Project-Brief?node-id=1-151&t=MNAH7lhjQ4CAgAXx-1" target="_blank">Open Full Screen →</a>
+      </div>
+    </div>
+    <div class="otxt" style="margin-top:1.2rem">
+      <p>The Figma brief mapped the problem in four columns before any data was touched: <strong>Context</strong> (80% of U.S. freight flows through just 20 major hubs — which corridors would cripple supply chains if disrupted?), <strong>Operations</strong> (manufacturers → transport → major hubs → warehouses → end customers), <strong>Risk</strong> (too much freight in too few places → if one hub fails, everything stalls → trucks and trains can't move goods → deliveries take 2–3× longer → stores run out → companies lose money), and <strong>Analytics</strong> (2022 Census Freight Data → group by 134 freight areas → score vulnerability → rank → flag high-risk commodities → logistics teams reroute, planners build capacity, government funds top-10 corridors).</p>
+      <p>This framing discipline — mapping the full causal chain from disruption to economic consequence before touching data — is what kept the analysis anchored to actionable outputs rather than interesting but unusable findings.</p>
+    </div>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <div class="osec">
+    <div class="ostag" style="color:var(--b)">Dashboard Screens</div>
+    <div class="ostit">Six Dashboard Views — From Risk Overview to Commodity Deep-Dive</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:1.2rem;margin-top:1.2rem">
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_152920.png" alt="Overview — Vulnerability Score by Area &amp; Risk Tier Distribution" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">Overview — Vulnerability Score by Area &amp; Risk Tier Distribution</div>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_152940.png" alt="Network Map — K=8 Nearest Neighbour Graph with Risk Tiers" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">Network Map — K=8 Nearest Neighbour Graph with Risk Tiers</div>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_152953.png" alt="Failure Simulation — 14 Areas, $17T Aggregate Rerouting Cost" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">Failure Simulation — 14 Areas, $17T Aggregate Rerouting Cost</div>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_153004.png" alt="Vulnerability Score vs Rerouting Cost — Network Position Beats Score" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">Vulnerability Score vs Rerouting Cost — Network Position Beats Score</div>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_153013.png" alt="Rerouting Impact Map — Top Disrupted Routes, Dallas-Fort Worth" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">Rerouting Impact Map — Top Disrupted Routes, Dallas-Fort Worth</div>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_153035.png" alt="Gravity Corridors — Top 100 Corridors by Gravity Score" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">Gravity Corridors — Top 100 by Line Thickness ∝ Gravity Score</div>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_153049.png" alt="CFS Area Deep-Dive — Risk Tier, Freight Value, Tonnage per Area" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">CFS Area Deep-Dive — Risk Tier, Freight Value, Tonnage per Area</div>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_153055.png" alt="Network Neighbours (K=8) &amp; Port Proximity per CFS Area" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">Network Neighbours (K=8) &amp; Port Proximity per CFS Area</div>
+      </div>
+      <div style="border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,0.08)">
+        <img src="https://raw.githubusercontent.com/SarrangTech/ClearPath-Analytics/main/assets/screenshots/Screenshot_2026-06-20_153107.png" alt="Commodity Risk Analysis — 422 Categories, $2.1T Hazmat, $3T Temp-Controlled" style="width:100%;display:block" loading="lazy" onerror="this.style.display='none'">
+        <div style="padding:0.65rem 0.85rem;background:#0d0d0d;font-size:0.78rem;color:rgba(255,255,255,0.55)">Commodity Risk Analysis — 422 Categories, $2.1T Hazmat, $3T Temp-Controlled</div>
+      </div>
+    </div>
+    <div class="otxt" style="margin-top:1rem"><p>Screenshots cover all six dashboard tabs: Overview, Network Map, Failure Simulation, Gravity Corridors, Area Deep-Dive, and Commodity Risk. The live dashboard is embedded above and available at full screen via the link in the Stack section.</p></div>
+  </div>
+
+  <!-- THE PROBLEM -->
   <div class="osec">
     <div class="ostag">The Problem</div>
     <div class="ostit">A $12M/Week Bridge Collapse Exposed a National Blind Spot</div>
     <div class="otxt">
-      <p>The 2024 Francis Scott Key Bridge collapse dropped Baltimore's regional freight 25% within one month at an estimated cost of <strong>$12M per week</strong>. Baltimore isn't even a top-5 corridor by freight value — yet the disruption required coordinated federal and state response. The obvious question: if a mid-size corridor failure produces that damage, what happens when Los Angeles-Long Beach, Houston, or Dallas-Fort Worth fails?</p>
-      <p>No publicly available tool answered that question at the geographic resolution the 2022 Census Commodity Flow Survey now makes possible. ClearPath Analytics is that tool.</p>
+      <p>U.S. domestic freight has a concentration problem nobody has built a tool to measure at corridor resolution. The 2024 Francis Scott Key Bridge collapse made this concrete: a single piece of infrastructure failed, regional freight dropped 25% within one month, and delay-related costs ran at an estimated <strong>$12M per week</strong>. Baltimore is not even a top-5 freight corridor by value — yet the disruption required coordinated federal and state response.</p>
+      <p>Two groups of decision-makers currently lack the tool they need. <strong>Shipment managers</strong> at firms like C.H. Robinson, J.B. Hunt, XPO, and FedEx improvise rerouting after a disruption has already begun — at the moment when costs are hardest to control. <strong>Policymakers</strong> at MARAD, FHWA, and state DOTs are distributing $488.6M in FY2026 Port Infrastructure Development Program grants without a ranked, geographically explicit vulnerability index. Without one, those decisions get driven by visibility and political attention rather than by where a failure would do the most damage.</p>
+      <p>No publicly available tool answered the core question at the geographic resolution the 2022 Census Commodity Flow Survey now makes possible. ClearPath Analytics is that tool.</p>
     </div>
+    <div class="insight">U.S. logistics costs reached $2.58 trillion in 2024 — 8.8% of GDP, well above the pre-pandemic range of 7.4–7.8%. The cost of getting infrastructure priorities wrong has never been higher.</div>
   </div>
+
+  <!-- DATA PIPELINE -->
   <div class="osec">
     <div class="ostag">Data Pipeline</div>
     <div class="ostit">Seven Raw Sources, Five Derived Files, One Critical Bug Found and Fixed</div>
-    <div class="otxt"><p>Four CFS datasets were retrieved programmatically via the Census Bureau API (94,023 rows paginated across multiple calls). Two TIGER/Line shapefiles from BTS provided geographic boundaries. During gravity model construction, a centroid geocoding bug was discovered — <strong>66 of 134 areas had been placed on incorrect coordinates</strong> (Buffalo on New York City's lat/lon, Baltimore in South Carolina). The fix read INTPTLAT/INTPTLON directly from the shapefile, producing zero zero-distance corridors. Vulnerability rankings were preserved at Spearman ρ=0.978.</p></div>
+    <div class="otxt"><p>All primary data originated from two federal agencies: the U.S. Census Bureau's 2022 Commodity Flow Survey API and the Bureau of Transportation Statistics TIGER/Line shapefile repository. The four CFS datasets were retrieved programmatically via paginated API calls (94,023 rows across multiple requests, validated against published CFS cross-tabulation totals). An early version of the extraction script had a Census API key hardcoded directly into source code — identified during code review, regenerated, and replaced with an environment variable before the repository was made public.</p></div>
     <div class="flow">
-      <div class="fstep"><div class="fsn">Step 1</div><div class="fsname">Census CFS API (94K rows)</div></div>
+      <div class="fstep"><div class="fsn">Raw</div><div class="fsname">Census CFS API (94,023 rows)</div></div>
       <div class="farr">→</div>
-      <div class="fstep"><div class="fsn">Step 2</div><div class="fsname">Centroid Bug Fix</div></div>
+      <div class="fstep"><div class="fsn">Centroids</div><div class="fsname">INTPTLAT/INTPTLON from shapefile</div></div>
       <div class="farr">→</div>
-      <div class="fstep"><div class="fsn">Step 3</div><div class="fsname">Composite Vuln. Index</div></div>
+      <div class="fstep"><div class="fsn">Distance Matrix</div><div class="fsname">17,822 Haversine corridor pairs</div></div>
       <div class="farr">→</div>
-      <div class="fstep"><div class="fsn">Step 4</div><div class="fsname">RF Classifier + Gravity Model</div></div>
+      <div class="fstep"><div class="fsn">Port Proximity</div><div class="fsname">26 NTAD intermodal facilities</div></div>
       <div class="farr">→</div>
-      <div class="fstep"><div class="fsn">Step 5</div><div class="fsname">NetworkX Failure Sim</div></div>
+      <div class="fstep"><div class="fsn">Features Master</div><div class="fsname">21-column ML-ready table</div></div>
       <div class="farr">→</div>
-      <div class="fstep"><div class="fsn">Step 6</div><div class="fsname">GitHub Actions Digest</div></div>
+      <div class="fstep"><div class="fsn">Vulnerability Scores</div><div class="fsname">134 CFS areas ranked</div></div>
     </div>
+    <table class="ctbl">
+      <thead><tr><th>Dataset</th><th>Source</th><th>Rows</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>cfs_freight_area.csv</td><td>Census CFS API</td><td>94,023</td><td>Freight value and tonnage by CFS area and commodity code</td></tr>
+        <tr class="hlrow"><td>centroids.csv</td><td>BTS TIGER/Line shapefile</td><td>134</td><td>Census-provided INTPTLAT/INTPTLON per CFS area (post-bug-fix)</td></tr>
+        <tr><td>distance_matrix.csv</td><td>Team-computed</td><td>17,822</td><td>Haversine distances for all 134×133 directed corridor pairs</td></tr>
+        <tr class="hlrow"><td>features_master.csv</td><td>Team-engineered</td><td>134</td><td>21-column ML-ready feature table; zero nulls</td></tr>
+        <tr><td>vulnerability_scores.csv</td><td>Team-computed</td><td>134</td><td>Composite vulnerability index for all 134 CFS areas</td></tr>
+      </tbody>
+    </table>
   </div>
+
+  <!-- CRITICAL BUG -->
+  <div class="osec">
+    <div class="ostag">Critical Challenge</div>
+    <div class="ostit">The Centroid Bug — 66 of 134 Areas Were on the Wrong Coordinates</div>
+    <div class="otxt">
+      <p>During gravity model construction, a significant upstream error was discovered. The original centroids.csv had been geocoded by area name rather than shapefile coordinates — placing <strong>66 of 134 areas on incorrect coordinates</strong>. Buffalo was placed on New York City's lat/lon. Baltimore was placed in South Carolina. Multiple West Coast areas collapsed onto a single California point. This corrupted 74% of all corridor distances — 13,266 of 17,822 pairs.</p>
+      <p>The fix was to read INTPTLAT/INTPTLON directly from the 2022_CFS_Areas.shp shapefile via GEO_ID join, producing zero zero-distance corridors. All four derived geo files were rebuilt and backed up as .orig.csv. The Spearman rank correlation between original and corrected vulnerability scores was <strong>ρ = 0.978</strong> — the geographic story was preserved, but the absolute distance values and rerouting costs were only valid after the fix.</p>
+    </div>
+    <div class="insight">A second data quality issue was caught separately: the original vulnerability_scores.csv summed freight values across all three SCTG commodity hierarchy levels (2-digit, 3-digit, 4-digit), triple-counting most shipments and inflating the national total to $112 trillion. The corrected pipeline uses only the COMM=0 aggregate row per area, yielding $18.04T — within 8% of the BTS-published benchmark of $19.6T.</div>
+  </div>
+
+  <!-- VULNERABILITY SCORING -->
   <div class="osec">
     <div class="ostag">Vulnerability Scoring</div>
-    <div class="ostit">Composite Index: Value 60% · Tonnage 40%</div>
-    <div class="otxt"><p>Each of 134 CFS areas receives a score: <code>vuln = (val_norm × 0.60) + (ton_norm × 0.40)</code>. Shipment value carries higher weight because high-value freight — pharmaceuticals, electronics, motor vehicles — generates disproportionate economic disruption per unit of volume. Sensitivity analysis across 60/40, 50/50, and 40/60 weightings yields Spearman ρ ≥ 0.99 — the top-10 rankings are robust to weighting choice.</p></div>
+    <div class="ostit">Composite Index: Value 60% · Tonnage 40% — Robust Across All Weightings</div>
+    <div class="otxt">
+      <p>Each of 134 CFS areas receives a score: <code>vuln = (val_norm × 0.60) + (ton_norm × 0.40)</code>. Shipment value carries 60% weight because high-value freight — pharmaceuticals, electronics, motor vehicles — generates disproportionate economic disruption per unit of volume. Tonnage carries 40% to capture bulk-freight corridors where infrastructure stress is highest even when per-unit value is lower.</p>
+      <p>To validate the 60/40 weighting assumption, the composite index was run at three weight combinations (60/40, 50/50, 40/60). All three yield <strong>Spearman ρ ≥ 0.99</strong>, and 9 of the top 10 corridors remain identical across all weightings. The one corridor that shifts (Atlanta, rank 9 vs. 10 depending on weighting) has a vulnerability score within 0.02 of its neighbors. The top-10 corridor rankings are robust to weighting choice.</p>
+    </div>
     <table class="ctbl">
       <thead><tr><th>Rank</th><th>CFS Area</th><th>Freight Value</th><th>Vuln. Score</th><th>Tier</th></tr></thead>
       <tbody>
-        <tr class="hlrow"><td>1</td><td>Los Angeles-Long Beach</td><td>$7,963.8B</td><td>0.882</td><td>High</td></tr>
-        <tr><td>2</td><td>Houston-The Woodlands</td><td>$4,234.6B</td><td>0.719</td><td>High</td></tr>
-        <tr><td>3</td><td>Chicago-Naperville</td><td>$4,290.3B</td><td>0.521</td><td>High</td></tr>
-        <tr><td>4</td><td>Dallas-Fort Worth</td><td>$3,757.1B</td><td>0.500</td><td>High</td></tr>
-        <tr><td>14</td><td>Seattle-Tacoma</td><td>$2,123.7B</td><td>0.243</td><td>High</td></tr>
+        <tr class="hlrow"><td>1</td><td>Los Angeles-Long Beach, CA</td><td>$7,963.8B</td><td>0.882</td><td>High</td></tr>
+        <tr><td>2</td><td>Houston-The Woodlands, TX</td><td>$4,234.6B</td><td>0.719</td><td>High</td></tr>
+        <tr><td>3</td><td>Chicago-Naperville, IL-IN-WI</td><td>$4,290.3B</td><td>0.521</td><td>High</td></tr>
+        <tr><td>4</td><td>Dallas-Fort Worth, TX-OK</td><td>$3,757.1B</td><td>0.500</td><td>High</td></tr>
+        <tr><td>5</td><td>Remainder of Texas</td><td>$2,166.3B</td><td>0.434</td><td>High</td></tr>
+        <tr><td>7</td><td>Remainder of Pennsylvania</td><td>$2,254.8B</td><td>0.345</td><td>High</td></tr>
+        <tr><td>14</td><td>Seattle-Tacoma, WA</td><td>$2,123.7B</td><td>0.243</td><td>High</td></tr>
+        <tr><td>70</td><td>Memphis-Forrest City, TN-MS-AR</td><td>$862.5B</td><td>0.085</td><td>Low ⚠️</td></tr>
       </tbody>
     </table>
+    <div class="insight">Areas are classified into three tiers using percentile-based breaks: High (top 10%, ≥90th percentile), Medium (75th–90th), Low (below 75th). This produces 14 High-tier, 20 Medium-tier, and 100 Low-tier areas. The Gini coefficient for freight value across all 134 areas is 0.461 — concentration is real but not extreme. 66 areas are needed to cover 80% of national freight value.</div>
   </div>
-  <div class="osec">
-    <div class="ostag">The Counterintuitive Finding</div>
-    <div class="ostit">Network Position Beats Vulnerability Score — Dallas-Fort Worth Is the Real Risk</div>
-    <div class="otxt"><p>LA-Long Beach scores #1 by vulnerability (0.882) but produces only the <strong>4th-highest rerouting cost</strong> — $1.49T — because the K=8 network provides multiple coastal bypass routes. Dallas-Fort Worth scores #4 (0.500) but produces the <strong>single worst failure outcome: $5.28T rerouting cost, 484 affected OD pairs, 32,954 extra miles</strong>. Structural network centrality matters more than raw freight volume when simulating real disruptions.</p></div>
-    <table class="ctbl">
-      <thead><tr><th>CFS Area</th><th>Vuln. Rank</th><th>Rerouting Cost</th><th>OD Pairs</th><th>Extra Miles</th></tr></thead>
-      <tbody>
-        <tr class="hlrow"><td>Dallas-Fort Worth</td><td>#4</td><td>$5,284.78B</td><td>484</td><td>32,954</td></tr>
-        <tr><td>Remainder of Pennsylvania</td><td>#7</td><td>$3,977.46B</td><td>1,028</td><td>30,695</td></tr>
-        <tr><td>Remainder of Illinois</td><td>#6</td><td>$3,282.03B</td><td>426</td><td>19,144</td></tr>
-        <tr><td>Los Angeles-Long Beach</td><td>#1</td><td>$1,487.95B</td><td>109</td><td>7,151</td></tr>
-        <tr><td>Houston-The Woodlands</td><td>#2</td><td>— (resilient)</td><td>0</td><td>—</td></tr>
-      </tbody>
-    </table>
-    <div class="insight">Houston scores #2 by vulnerability but produces zero rerouting cost — the K=8 network absorbs its failure entirely. A lower-connectivity K=4 topology would surface Houston's fragility. The model's topology assumption is itself a design choice that shapes the conclusions.</div>
-  </div>
+
+  <!-- MACHINE LEARNING -->
   <div class="osec">
     <div class="ostag">Machine Learning</div>
-    <div class="ostit">Random Forest: 90.3% LOOCV Across 134 Areas</div>
-    <div class="otxt"><p>With only 134 rows, standard 80/20 splits are unreliable. Leave-one-out cross-validation was used instead — each area serves as its own test case once. The classifier achieves <strong>90.3% accuracy</strong>. Feature importance: Tonnage (0.326) and Value (0.285) together account for 61% of predictive power. Dominant commodity type contributes exactly zero — it's how much freight moves, not what kind.</p></div>
+    <div class="ostit">Random Forest Classifier: 90.3% LOOCV Across 134 Areas</div>
+    <div class="otxt">
+      <p>With only 134 rows, standard 80/20 splits are statistically unreliable — each test set would have only ~27 samples. Leave-one-out cross-validation was used instead, where each of the 134 areas serves as its own test case exactly once. The classifier achieves <strong>90.3% LOOCV accuracy</strong> with <code>class_weight='balanced'</code> to compensate for the 100:20:14 Low:Medium:High imbalance.</p>
+      <p>The relatively lower Medium-tier recall (0.55) reflects genuine ambiguity at the middle tier — scores sit between two more clearly defined extremes. Two High-tier areas (Remainder of Kentucky, Seattle-Tacoma) were predicted as Medium by the classifier; their vulnerability scores (0.2452 and 0.2427) sit just above the 90th percentile cutoff, making them genuine borderline cases rather than misclassifications.</p>
+    </div>
     <div class="barchart">
       <div class="brow"><div class="blbl">Tonnage</div><div class="btrack"><div class="bfill" style="background:var(--gr)" data-w="100"></div></div><div class="bval">0.326</div></div>
       <div class="brow"><div class="blbl">Value</div><div class="btrack"><div class="bfill" style="background:var(--g)" data-w="87"></div></div><div class="bval">0.285</div></div>
       <div class="brow"><div class="blbl">Num Commodities</div><div class="btrack"><div class="bfill" style="background:var(--b)" data-w="57"></div></div><div class="bval">0.187</div></div>
       <div class="brow"><div class="blbl">Val/Ton Ratio</div><div class="btrack"><div class="bfill" style="background:var(--p)" data-w="23"></div></div><div class="bval">0.076</div></div>
       <div class="brow"><div class="blbl">Seaport Distance</div><div class="btrack"><div class="bfill" style="background:var(--r)" data-w="20"></div></div><div class="bval">0.065</div></div>
-      <div class="brow"><div class="blbl">Dominant Commodity</div><div class="btrack"><div class="bfill" style="background:var(--mu)" data-w="1"></div></div><div class="bval">0.000</div></div>
+      <div class="brow"><div class="blbl">Neighbor Distance</div><div class="btrack"><div class="bfill" style="background:var(--o)" data-w="13"></div></div><div class="bval">0.042</div></div>
+      <div class="brow"><div class="blbl">Is Metro</div><div class="btrack"><div class="bfill" style="background:var(--mu)" data-w="6"></div></div><div class="bval">0.019</div></div>
+      <div class="brow"><div class="blbl">Dominant Commodity</div><div class="btrack"><div class="bfill" style="background:var(--bd)" data-w="1"></div></div><div class="bval">0.000</div></div>
+    </div>
+    <div class="insight">Dominant commodity type contributes exactly zero predictive importance. It's how much freight moves through a corridor — not what kind — that determines its vulnerability tier. This finding directly contradicts the intuition that pharmaceutical or electronics corridors are inherently more vulnerable than bulk-commodity corridors.</div>
+    <table class="ctbl" style="margin-top:1.2rem">
+      <thead><tr><th>Tier</th><th>Precision</th><th>Recall</th><th>F1</th><th>Support</th></tr></thead>
+      <tbody>
+        <tr><td>High</td><td>0.80</td><td>0.86</td><td>0.83</td><td>14</td></tr>
+        <tr><td>Medium</td><td>0.73</td><td>0.55</td><td>0.63</td><td>20</td></tr>
+        <tr class="hlrow"><td>Low</td><td>0.94</td><td>0.98</td><td>0.96</td><td>100</td></tr>
+        <tr><td><strong>Overall</strong></td><td><strong>0.90</strong></td><td><strong>0.90</strong></td><td><strong>0.90</strong></td><td><strong>134</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GRAVITY MODEL -->
+  <div class="osec">
+    <div class="ostag">Gravity Model</div>
+    <div class="ostit">17,822 Corridor Pairs Scored — Short, High-Value Routes Dominate</div>
+    <div class="otxt">
+      <p>A spatial gravity model scored all 17,822 directed corridor pairs using: <code>gravity_ij = (VAL_i × VAL_j) / distance_ij²</code>. High-gravity corridors move the most freight value over the shortest distance, making a disruption there propagate the largest economic shock. The gravity_norm column (0–1 normalized) served as the edge weight in the NetworkX graph.</p>
+      <p>The Philadelphia-Reading-Camden corridor emerged as the highest-gravity corridor nationally — specifically between the Pennsylvania and New Jersey state parts, separated by just 16.96 miles. The extremely short distance combined with high freight value at both endpoints produced a gravity score nearly twice that of the next-ranked corridor (New York-Newark NJ to New York-Newark NY at 60 miles). This correctly surfaces dense, short-haul intra-metro freight flows as the highest-impact disruption scenarios.</p>
     </div>
   </div>
+
+  <!-- NETWORK SIMULATION -->
   <div class="osec">
-    <div class="ostag">Hidden Risk: Memphis</div>
-    <div class="ostit">Rank #70 Overall — Top 3 Nationally for Pharmaceutical Freight</div>
-    <div class="otxt"><p>Memphis-Forrest City ranks 70th out of 134 by overall vulnerability score (0.0847) — Low tier. A policymaker scanning the ranked table would have no reason to flag it. Yet EDA revealed it handles <strong>4.5% of national pharmaceutical freight value</strong> — third behind only LA-Long Beach (11.5%) and Chicago (6.3%) — because the FedEx SuperHub routes overnight pharmaceutical distribution through Memphis. A composite score built on total VAL and TON will always miss this kind of single-facility concentration risk.</p></div>
-    <div class="insight">The Memphis finding illustrates why aggregate vulnerability rankings need commodity-level overlays. The risk isn't geographic — it's carrier-specific. The correct mitigation isn't rerouting around Memphis; it's maintaining a secondary overnight carrier relationship for time-sensitive pharmaceutical shipments.</div>
+    <div class="ostag">Network Simulation</div>
+    <div class="ostit">The Counterintuitive Finding — Network Position Beats Vulnerability Score</div>
+    <div class="otxt">
+      <p>A K=8 nearest-neighbor NetworkX graph was built with all 134 CFS areas as nodes and haversine distance as edge weights. Each of the 14 High-tier areas was simulated as a failure by removing that node, then running Dijkstra shortest-path to find all origin-destination pairs whose paths were affected. Rerouting cost was computed as: <code>cost ($) = extra_miles × (node_TON × 1,000 short tons) × $0.08/ton-mile</code> (BTS standard truck freight rate).</p>
+      <p>The most important finding: <strong>Dallas-Fort Worth ranks only #4 by vulnerability score but produces the single worst rerouting outcome</strong> — $5,284.78B, 484 affected OD pairs, 32,954 extra miles — because of its structural network centrality. LA-Long Beach is the #1 vulnerability area but produces only the 4th-highest rerouting cost because the K=8 topology provides multiple coastal bypass routes.</p>
+    </div>
+    <table class="ctbl">
+      <thead><tr><th>CFS Area</th><th>Vuln. Rank</th><th>Rerouting Cost</th><th>OD Pairs</th><th>Extra Miles</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>Dallas-Fort Worth, TX-OK</td><td>#4</td><td>$5,284.78B</td><td>484</td><td>32,954</td></tr>
+        <tr><td>Remainder of Pennsylvania</td><td>#7</td><td>$3,977.46B</td><td>1,028</td><td>30,695</td></tr>
+        <tr><td>Remainder of Illinois</td><td>#6</td><td>$3,282.03B</td><td>426</td><td>19,144</td></tr>
+        <tr><td>Los Angeles-Long Beach</td><td>#1</td><td>$1,487.95B</td><td>109</td><td>7,151</td></tr>
+        <tr><td>Chicago-Naperville</td><td>#3</td><td>$1,279.99B</td><td>314</td><td>8,759</td></tr>
+        <tr><td>Houston-The Woodlands</td><td>#2</td><td>— (resilient)</td><td>0</td><td>—</td></tr>
+        <tr><td>Seattle-Tacoma</td><td>#14</td><td>— (resilient)</td><td>0</td><td>—</td></tr>
+      </tbody>
+    </table>
+    <div class="insight">Houston scores #2 by vulnerability but produces zero rerouting cost — the K=8 network absorbs its failure entirely. A lower-connectivity K=4 topology would surface Houston's fragility. The network topology assumption is itself a design choice that shapes the conclusions — this is documented as a known limitation and Phase 2 extension.</div>
   </div>
+
+  <!-- REROUTING PLAYBOOK -->
+  <div class="osec">
+    <div class="ostag">Rerouting Playbook</div>
+    <div class="ostit">Alternative Corridors Pre-Identified for the Five Highest-Cost Failure Scenarios</div>
+    <table class="ctbl">
+      <thead><tr><th>If This Corridor Fails</th><th>Primary Reroute Path</th><th>Avg. Added Miles</th><th>Affected OD Pairs</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>Dallas-Fort Worth, TX-OK</td><td>Remainder of Texas → Remainder of Oklahoma</td><td>68.1 mi</td><td>484</td></tr>
+        <tr><td>Remainder of Pennsylvania</td><td>Philadelphia-Reading-Camden → Pittsburgh-New Castle-Weirton</td><td>29.9 mi</td><td>1,028</td></tr>
+        <tr><td>Remainder of Illinois</td><td>Chicago-Naperville → Remainder of Indiana</td><td>44.9 mi</td><td>426</td></tr>
+        <tr><td>Los Angeles-Long Beach, CA</td><td>San Jose-SF-Oakland → San Diego-Chula Vista-Carlsbad</td><td>65.6 mi</td><td>109</td></tr>
+        <tr><td>Chicago-Naperville, IL-IN-WI</td><td>Remainder of Illinois → Remainder of Wisconsin</td><td>27.9 mi</td><td>314</td></tr>
+      </tbody>
+    </table>
+    <div class="otxt" style="margin-top:1rem"><p>For areas embedded in dense metro clusters (Remainder of Pennsylvania, Chicago-Naperville), average added distance per shipment is under 45 miles — nearby alternatives absorb rerouted volume without large detours. For areas that are the primary node in a larger region (Dallas-Fort Worth, LA-Long Beach), added distance jumps to 65–68 miles — there is no equally positioned alternative nearby. This distinction tells a shipment manager not just which corridor to expect but how much additional transit time and cost to budget.</p></div>
+  </div>
+
+  <!-- HIDDEN RISK: MEMPHIS -->
+  <div class="osec">
+    <div class="ostag">Hidden Risk</div>
+    <div class="ostit">Memphis — Rank #70 Overall, Top 3 Nationally for Pharmaceutical Freight</div>
+    <div class="otxt">
+      <p>Memphis-Forrest City ranks 70th of 134 by overall vulnerability score (0.0847) — firmly Low tier. A policymaker scanning the ranked table would have no reason to flag it. Yet commodity-level EDA revealed it handles <strong>4.5% of national pharmaceutical freight value</strong> — third behind only LA-Long Beach (11.5%) and Chicago (6.3%) — because the FedEx SuperHub routes overnight pharmaceutical distribution through Memphis.</p>
+      <p>This creates a mismatch between aggregate vulnerability (Low) and commodity-specific concentration risk (Top 3 nationally). A general-purpose ranking built on total VAL and TON will always miss this kind of risk — Memphis's overall freight volume is unremarkable; it is the composition and carrier dependence that creates the exposure.</p>
+      <p>Recommended action: pharmaceutical distributors with cold-chain dependencies should treat Memphis-Forrest City as a distinct tabletop exercise scenario. Because the risk is driven by a single carrier's hub-and-spoke architecture rather than geography, the appropriate mitigation is carrier-specific: maintaining a secondary overnight carrier relationship (UPS, DHL) for time-sensitive pharmaceutical shipments.</p>
+    </div>
+    <div class="insight">This case illustrates why commodity-specific concentration analysis at the SCTG-4 grain — layered on top of geographic vulnerability scores — surfaces a class of hidden risks that aggregate rankings will always miss. Memphis was identified manually during EDA; a systematic SCTG-4 scan across all 134 areas is the natural Phase 2 extension.</div>
+  </div>
+
+  <!-- EDA FINDINGS -->
+  <div class="osec">
+    <div class="ostag">Key EDA Findings</div>
+    <div class="ostit">Five Findings That Reshaped the Original Project Framing</div>
+    <ul class="clist">
+      <li class="active"><strong>Freight concentration is broader than the LA-Long Beach headline.</strong> Gini coefficient = 0.461 across 134 areas. Top 5 areas hold only 17.5% of national freight value. 66 areas needed to cover 80%. Policy and rerouting playbooks must target the top 30–40 corridors — not just the top 5 ports.</li>
+      <li class="active"><strong>Bug corrected; vulnerability ranking preserved.</strong> SCTG hierarchy triple-count inflated the original national total by 3.42×. After correction: $18.04T, within 8% of BTS benchmark. Spearman ρ = 0.978 confirms rankings hold.</li>
+      <li><strong>Census suppression affects 45.91% of commodity rows.</strong> VAL=0 in 45.91% of rows — intentional Census suppression of small/confidential cells, not missing data. All commodity analysis uses SCTG-2 as canonical grain; SCTG-4 reserved for Memphis pharmaceutical case study only.</li>
+      <li><strong>Pharmaceutical concentration centers on Memphis, not the Northeast.</strong> Top 5 pharma areas: LA-Long Beach (11.5%), Chicago (6.3%), Memphis (4.5%), Dallas-Fort Worth (4.2%), Boston (3.9%). Memphis is #3 because FedEx SuperHub — not because it manufactures pharmaceuticals.</li>
+      <li><strong>Remainder-of-State zones are a distinct bulk-freight risk class.</strong> Non-metropolitan Remainder zones carry 42.9% of national tonnage despite holding 29.1% of national value. Four of top 10 vulnerability areas are Remainder zones. Structurally different risk profile from metro port corridors — requires separate policy response.</li>
+    </ul>
+  </div>
+
+  <!-- AUTOMATED MONITORING -->
   <div class="osec">
     <div class="ostag">Automated Monitoring</div>
-    <div class="ostit">Weekly Digest Deployed via GitHub Actions</div>
-    <div class="otxt"><p>digest_runner.py monitors BTS freight indicators for the top 15 CFS areas and sends email alerts when volume drops ≥15% below a 4-week rolling average. In its first live run against real BTS data, it correctly flagged a <strong>74.1% week-over-week drop</strong> in the New York-Newark corridor. Deployed on GitHub Actions — no server required.</p></div>
-  </div>
-  <div class="osec">
-    <div class="ostag">Stack</div><div class="ostit">Built With</div>
-    <div class="tools"><span class="ttag">Python</span><span class="ttag">Pandas</span><span class="ttag">GeoPandas</span><span class="ttag">NetworkX</span><span class="ttag">Scikit-learn</span><span class="ttag">Random Forest</span><span class="ttag">Haversine</span><span class="ttag">Census CFS API</span><span class="ttag">BTS TIGER/Line</span><span class="ttag">Dijkstra Shortest Path</span><span class="ttag">GitHub Actions</span><span class="ttag">Plotly</span></div>
-    <div class="olinks">
-      <a href="https://github.com/SarrangTech" class="olink pri" target="_blank">GitHub →</a>
+    <div class="ostit">Weekly Digest Deployed via GitHub Actions — Live BTS Freight Monitoring</div>
+    <div class="otxt">
+      <p><code>digest_runner.py</code> monitors BTS freight indicators for the top 15 CFS areas and sends email alerts when any area's weekly volume drops ≥15% below its 4-week rolling average. Deployed on GitHub Actions — no server required, runs on a weekly cron schedule pulling live BTS data.</p>
+      <p>In its first live run against real BTS data, the system correctly flagged a <strong>74.1% week-over-week drop</strong> in the New York-Newark corridor — exactly the kind of early signal that allows a 72-hour reactive scramble to become a 4-hour execution of a pre-approved plan.</p>
+    </div>
+    <div class="flow">
+      <div class="fstep"><div class="fsn">Weekly</div><div class="fsname">GitHub Actions trigger</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Pull</div><div class="fsname">Live BTS freight indicators</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Compare</div><div class="fsname">vs 4-week rolling average</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Alert</div><div class="fsname">Email if drop ≥15%</div></div>
+      <div class="farr">→</div>
+      <div class="fstep"><div class="fsn">Log</div><div class="fsname">Results to digest_log.csv</div></div>
     </div>
   </div>
+
+  <!-- CHALLENGES -->
+  <div class="osec">
+    <div class="ostag">Challenges</div>
+    <div class="ostit">What Actually Went Wrong and How It Was Fixed</div>
+    <table class="ctbl">
+      <thead><tr><th>Challenge</th><th>Impact</th><th>Resolution</th></tr></thead>
+      <tbody>
+        <tr class="hlrow"><td>Centroid geocoding bug</td><td>74% of corridor distances corrupted — 13,266 of 17,822 pairs wrong</td><td>Read INTPTLAT/INTPTLON directly from shapefile via GEO_ID join; rebuilt all derived geo files</td></tr>
+        <tr><td>SCTG triple-counting</td><td>National freight total inflated to $112T (actual: $18.04T)</td><td>Use only COMM=0 aggregate row per area; validated against BTS benchmark</td></tr>
+        <tr class="hlrow"><td>API key in source code</td><td>Security risk — Census API key hardcoded and committed to repo</td><td>Key regenerated; replaced with CENSUS_API_KEY environment variable before repo made public</td></tr>
+        <tr><td>Census suppression (45.91% of rows)</td><td>Commodity drilldowns unreliable below SCTG-2 for most areas</td><td>All analysis uses SCTG-2 as canonical grain; SCTG-4 only for Memphis (high volume, low suppression)</td></tr>
+        <tr class="hlrow"><td>134-row dataset — CV strategy</td><td>Standard 80/20 split would produce ~27-sample test sets — statistically unreliable</td><td>Leave-one-out cross-validation — each area serves as its own test case exactly once</td></tr>
+        <tr><td>K=8 topology masks fragility</td><td>Houston and Seattle show zero rerouting cost — appears safe but isn't at lower connectivity</td><td>Documented as known limitation; K=4 analysis flagged as Phase 2 extension</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- RECOMMENDATIONS -->
+  <div class="osec">
+    <div class="ostag">Recommendations</div>
+    <div class="ostit">Actionable Outputs for Two Audiences</div>
+    <div class="rgrid">
+      <div class="rcard"><div class="rn" style="color:var(--gr);font-size:18px;margin-bottom:10px">Shipment Managers</div><div class="rl">Pre-negotiate backup carrier capacity on Dallas-Fort Worth first — worst simulated outcome of any corridor despite only #4 vulnerability rank. Treat Memphis as a named pharmaceutical contingency scenario. Subscribe to the automated weekly digest for 72-hour early warning.</div></div>
+      <div class="rcard"><div class="rn" style="color:var(--b);font-size:18px;margin-bottom:10px">Policymakers</div><div class="rl">Prioritize 14 High-tier areas for infrastructure investment review — Dallas-Fort Worth, Remainder of Pennsylvania, and Remainder of Illinois first. Broaden investment lens beyond the 5 largest port-city corridors. Treat rural Remainder-of-State zones as a separate investment category from metro ports.</div></div>
+      <div class="rcard"><div class="rn" style="color:var(--g);font-size:18px;margin-bottom:10px">Implementation</div><div class="rl">No new infrastructure required to begin. Weekly digest is live on GitHub Actions. Rerouting playbook and investment brief generated directly from corridor_gravity_scores.csv, risk_tier_output.csv, and failure_simulation_results.csv — all in the repo.</div></div>
+    </div>
+  </div>
+
+  <!-- STACK -->
+  <div class="osec">
+    <div class="ostag">Stack</div>
+    <div class="ostit">Built With</div>
+    <div class="tools">
+      <span class="ttag">Python</span>
+      <span class="ttag">Pandas</span>
+      <span class="ttag">GeoPandas</span>
+      <span class="ttag">NetworkX</span>
+      <span class="ttag">Scikit-learn</span>
+      <span class="ttag">Random Forest</span>
+      <span class="ttag">Haversine</span>
+      <span class="ttag">Census CFS API</span>
+      <span class="ttag">BTS TIGER/Line</span>
+      <span class="ttag">Dijkstra Shortest Path</span>
+      <span class="ttag">GitHub Actions</span>
+      <span class="ttag">Plotly</span>
+      <span class="ttag">Streamlit</span>
+      <span class="ttag">Figma FigJam</span>
+      <span class="ttag">Miro</span>
+      <span class="ttag">LOOCV</span>
+      <span class="ttag">Gravity Model</span>
+      <span class="ttag">Spearman Correlation</span>
+    </div>
+    <div class="olinks">
+      <a href="https://github.com/SarrangTech/ClearPath-Analytics" class="olink pri" target="_blank">GitHub →</a>
+      <a href="https://shreya2622-clearpath-analytics-dashboard-shreya-ijktnu.streamlit.app/" class="olink" target="_blank" style="background:var(--gr);color:#000;border-color:var(--gr)">&#9679; Live Dashboard →</a>
+      <a href="https://www.figma.com/board/6TWkFvmcqvBU3bpHF4cLHF/Supply-Chain-Vulnerability-%E2%80%94-Project-Brief?node-id=1-151&t=MNAH7lhjQ4CAgAXx-1" class="olink" target="_blank">Figma Brief →</a>
+    </div>
+  </div>
+
 </div>
 </div>
 
