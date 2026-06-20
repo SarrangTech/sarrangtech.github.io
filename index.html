@@ -67,7 +67,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .mqt{display:flex;width:max-content;align-items:center;animation:mqscroll 42s linear infinite}
 .mq:hover .mqt{animation-play-state:paused}
 .mqi{display:flex;align-items:center;gap:10px;padding:0 26px;white-space:nowrap}
-.mqi img{height:23px;width:auto;display:block;opacity:.85}
+.mqi img{height:23px;width:auto;display:block;opacity:1}
 .mqi span{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#8a8278}
 @keyframes mqscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.mqt{animation:none}}
@@ -306,30 +306,30 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
 <!-- ════════ TECH MARQUEE ════════ -->
 <div class="mq" aria-label="Core stack">
   <div class="mqt">
-    <span class="mqi"><img src="https://cdn.simpleicons.org/python/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Python</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/apachespark/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>PySpark</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/databricks/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Databricks</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/mlflow/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>MLflow</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/tensorflow/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>TensorFlow</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/keras/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Keras</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/scikitlearn/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>scikit-learn</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/pandas/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>pandas</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/numpy/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>NumPy</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/huggingface/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Hugging Face</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/docker/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Docker</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/fastapi/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>FastAPI</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/neo4j/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Neo4j</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/mongodb/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>MongoDB</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/plotly/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Plotly</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/streamlit/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Streamlit</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/pytorch/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>PyTorch</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/langchain/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>LangChain</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/apacheairflow/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Airflow</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/snowflake/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Snowflake</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/apachekafka/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Kafka</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/kubernetes/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Kubernetes</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/terraform/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>Terraform</span></span>
-    <span class="mqi"><img src="https://cdn.simpleicons.org/githubactions/8a8278" alt="" loading="lazy" onerror="this.remove()"><span>GitHub Actions</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/python" alt="" loading="lazy" onerror="this.remove()"><span>Python</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/apachespark" alt="" loading="lazy" onerror="this.remove()"><span>PySpark</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/databricks" alt="" loading="lazy" onerror="this.remove()"><span>Databricks</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/mlflow" alt="" loading="lazy" onerror="this.remove()"><span>MLflow</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/tensorflow" alt="" loading="lazy" onerror="this.remove()"><span>TensorFlow</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/keras" alt="" loading="lazy" onerror="this.remove()"><span>Keras</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/scikitlearn" alt="" loading="lazy" onerror="this.remove()"><span>scikit-learn</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/pandas" alt="" loading="lazy" onerror="this.remove()"><span>pandas</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/numpy" alt="" loading="lazy" onerror="this.remove()"><span>NumPy</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/huggingface" alt="" loading="lazy" onerror="this.remove()"><span>Hugging Face</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/docker" alt="" loading="lazy" onerror="this.remove()"><span>Docker</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/fastapi" alt="" loading="lazy" onerror="this.remove()"><span>FastAPI</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/neo4j" alt="" loading="lazy" onerror="this.remove()"><span>Neo4j</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/mongodb" alt="" loading="lazy" onerror="this.remove()"><span>MongoDB</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/plotly" alt="" loading="lazy" onerror="this.remove()"><span>Plotly</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/streamlit" alt="" loading="lazy" onerror="this.remove()"><span>Streamlit</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/pytorch" alt="" loading="lazy" onerror="this.remove()"><span>PyTorch</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/langchain" alt="" loading="lazy" onerror="this.remove()"><span>LangChain</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/apacheairflow" alt="" loading="lazy" onerror="this.remove()"><span>Airflow</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/snowflake" alt="" loading="lazy" onerror="this.remove()"><span>Snowflake</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/apachekafka" alt="" loading="lazy" onerror="this.remove()"><span>Kafka</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/kubernetes" alt="" loading="lazy" onerror="this.remove()"><span>Kubernetes</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/terraform" alt="" loading="lazy" onerror="this.remove()"><span>Terraform</span></span>
+    <span class="mqi"><img src="https://cdn.simpleicons.org/githubactions" alt="" loading="lazy" onerror="this.remove()"><span>GitHub Actions</span></span>
   </div>
 </div>
 <script>(function(){var m=document.currentScript.previousElementSibling;if(!m)return;var t=m.querySelector('.mqt');if(t)t.innerHTML+=t.innerHTML;})();</script>
