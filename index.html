@@ -42,6 +42,20 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .skcl{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);display:block;margin-bottom:3px}
 .skc:hover .skcl{color:rgba(0,0,0,.6)}
 
+/* index / depth map */
+.idxh{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:24px 44px;border-bottom:1px solid var(--bd)}
+.idxsub{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.idxgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd)}
+.idxc{background:var(--k);padding:28px 32px;text-decoration:none;display:flex;flex-direction:column;gap:11px;transition:background .2s}
+.idxc:hover{background:var(--m)}
+.idxtop{display:flex;align-items:baseline;gap:14px}
+.idxn{font-family:'Bebas Neue',sans-serif;font-size:44px;line-height:.85}
+.idxk{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--w)}
+.idxt{font-size:13px;color:#9a9288;line-height:1.6;flex:1}
+.idxt b{color:var(--w);font-weight:500}
+.idxgo{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);transition:color .2s}
+.idxc:hover .idxgo{color:var(--r)}
+
 /* section chrome */
 section{border-bottom:1px solid var(--bd)}
 .sh{display:grid;grid-template-columns:180px 1fr;border-bottom:1px solid var(--bd)}
@@ -221,6 +235,7 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
   .sh{grid-template-columns:1fr}.snum{display:none}.stit{padding:16px 24px}
   .eg{grid-template-columns:1fr}.es{border-right:none;border-bottom:1px solid var(--bd)}
   .pg{grid-template-columns:1fr}.pc{border-right:none}
+  .idxgrid{grid-template-columns:1fr}.idxh{padding:18px 24px}
   .cr2{grid-template-columns:1fr 2fr;padding:14px 24px}.cn,.ctag{display:none}
   .rr{grid-template-columns:1fr}.rpub{border-right:none;border-bottom:1px solid var(--bd)}
   .cw{grid-template-columns:1fr;gap:36px;padding:48px 28px}
@@ -272,8 +287,48 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
   </div>
 </header>
 
+<!-- ════════ INDEX / DEPTH MAP ════════ -->
+<section class="idx" id="map">
+  <div class="idxh">
+    <p class="sklbl" style="margin:0">The Work at a Glance</p>
+    <p class="idxsub">6 domains · 23 case studies · 2 papers · tap to jump</p>
+  </div>
+  <div class="idxgrid">
+    <a class="idxc" href="#projects">
+      <div class="idxtop"><span class="idxn" style="color:var(--gr)">8</span><span class="idxk">ML &amp; AI Systems</span></div>
+      <div class="idxt">IEEE-published computer vision, fraud detection &amp; explainable credit risk — <b>0.96 ROC-AUC</b>, 95% precision, edge-deployed CNNs.</div>
+      <span class="idxgo">Explore →</span>
+    </a>
+    <a class="idxc" href="#business">
+      <div class="idxtop"><span class="idxn" style="color:var(--p)">6</span><span class="idxk">Optimization &amp; OR</span></div>
+      <div class="idxt">LP &amp; integer programming with shadow-price and stochastic analysis — a <b>256-scenario</b> playoff IP, Monte Carlo DCF, +5 coursework models.</div>
+      <span class="idxgo">Explore →</span>
+    </a>
+    <a class="idxc" href="#strategy">
+      <div class="idxtop"><span class="idxn" style="color:var(--o)">3</span><span class="idxk">Data Strategy · MIT CISR</span></div>
+      <div class="idxt">AI-at-scale, data monetization &amp; capability-maturity teardowns — <b>Cemex, Wolters Kluwer, CarMax</b>.</div>
+      <span class="idxgo">Explore →</span>
+    </a>
+    <a class="idxc" href="#supplychain">
+      <div class="idxtop"><span class="idxn" style="color:var(--b)">6</span><span class="idxk">Supply Chain &amp; Ops</span></div>
+      <div class="idxt">Network optimization &amp; operations strategy on real freight — an <b>$18T</b> U.S. corridor model, CPFR turnaround, capacity planning.</div>
+      <span class="idxgo">Explore →</span>
+    </a>
+    <a class="idxc" href="#experience">
+      <div class="idxtop"><span class="idxn" style="color:var(--r)">4</span><span class="idxk">Industry Experience</span></div>
+      <div class="idxt">Healthcare AI, fintech &amp; banking AML — graph-grounded clinical RAG on a <b>129K-entity</b> Neo4j knowledge graph. <b>3+ yrs</b>.</div>
+      <span class="idxgo">Explore →</span>
+    </a>
+    <a class="idxc" href="#research">
+      <div class="idxtop"><span class="idxn" style="color:var(--g)">2</span><span class="idxk">Research</span></div>
+      <div class="idxt">Peer-reviewed &amp; indexed — <b>IEEE</b> (forest-fire CV) and <b>Springer / SCOPUS</b> (P2P credit-risk explainability).</div>
+      <span class="idxgo">Explore →</span>
+    </a>
+  </div>
+</section>
+
 <!-- EXPERIENCE -->
-<section>
+<section id="experience">
   <div class="sh"><div class="snum">01 / EXPERIENCE</div><div class="stit">Where I've Done the Work</div></div>
   <div class="eg">
     <div class="es"><div class="eco">Arca AI</div><div class="er">Data Scientist</div><div class="ep">Sep 2024 – Aug 2025<br>Healthcare AI · Bangalore</div></div>
@@ -309,7 +364,7 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
 </section>
 
 <!-- ML PROJECTS -->
-<section>
+<section id="projects">
   <div class="sh"><div class="snum">02 / ML PROJECTS</div><div class="stit">Click Any Card → Full Case Study</div></div>
   <div class="pg">
     <div class="pc cr" onclick="openOv('ignisai')">
@@ -380,7 +435,7 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
 </section>
 
 <!-- BUSINESS MODELING PROJECTS -->
-<section>
+<section id="business">
   <div class="sh"><div class="snum">03 / BUSINESS MODELING</div><div class="stit">Optimization & Analytics Case Studies</div></div>
   <div class="pg">
     <div class="pc co" onclick="openOv('harbor')">
@@ -437,8 +492,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
 
 
 <!-- BUSINESS STRATEGY & AI ANALYTICS (MISM 6213 MIT CISR CASES) -->
-<section>
-  <div class="sh"><div class="snum">03.5 / STRATEGY &amp; AI ANALYTICS</div><div class="stit">MIT CISR Case Studies — Data Strategy &amp; AI Product Analysis</div></div>
+<section id="strategy">
+  <div class="sh"><div class="snum">04 / STRATEGY &amp; AI ANALYTICS</div><div class="stit">MIT CISR Case Studies — Data Strategy &amp; AI Product Analysis</div></div>
   <div class="pg">
     <div class="pc co" onclick="openOv('cemex')">
       <div class="pt">AI at Scale · MLOps · Product Health KPIs · Model Lifecycle</div>
@@ -467,8 +522,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
   </div>
 </section>
   <!-- ════════════════════ SUPPLY CHAIN PORTFOLIO ════════════════════ -->
-<section>
-  <div class="sh"><div class="snum">05.5 / SUPPLY CHAIN</div><div class="stit">Operations, Strategy & Disruption Analysis</div></div>
+<section id="supplychain">
+  <div class="sh"><div class="snum">05 / SUPPLY CHAIN</div><div class="stit">Operations, Strategy & Disruption Analysis</div></div>
   <div class="pg">
 
     <div class="pc cgr" onclick="openOv('clearpath')">
@@ -528,8 +583,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
   </div>
 </section>
 <!-- COURSEWORK QUICK-VIEW -->
-<section>
-  <div class="sh"><div class="snum">04 / MORE COURSEWORK</div><div class="stit">Additional Analyses</div></div>
+<section id="coursework">
+  <div class="sh"><div class="snum">06 / MORE COURSEWORK</div><div class="stit">Additional Analyses</div></div>
   <div class="cr2"><div class="cn">01</div><div class="cname">Acadia Coffee Blend LP</div><div class="cdesc">Profit max: $2,461.22. Shadow price: Costa Rican beans $11.07/lb (binding), Mexican $0 (non-binding). Solved both PuLP and scipy.optimize with verified identical results.</div><div class="ctag">LP · PuLP</div></div>
   <div class="cr2"><div class="cn">02</div><div class="cname">Campus Coffee Revenue Simulation</div><div class="cdesc">500-day sim. Exp interarrival μ=0.8 min. 5% catering orders (Exp μ=$75). Mean $3,835 · Std $452 · 5th–95th: $3,148–$4,593. Validated against analytical expectations.</div><div class="ctag">Monte Carlo</div></div>
   <div class="cr2"><div class="cn">03</div><div class="cname">COVID-19 Healthcare Capacity Risk</div><div class="cdesc">R²=0.74 regression — bed count and staffing ratios as top mortality predictors in 50 counties. K-means identified 10 highest-risk counties for emergency deployment. Certificate of Merit, CBIT.</div><div class="ctag">Regression · Clustering</div></div>
@@ -538,8 +593,8 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
 </section>
 
 <!-- RESEARCH -->
-<section>
-  <div class="sh"><div class="snum">05 / RESEARCH</div><div class="stit">Peer-Reviewed Publications</div></div>
+<section id="research">
+  <div class="sh"><div class="snum">07 / RESEARCH</div><div class="stit">Peer-Reviewed Publications</div></div>
   <div class="rr">
     <div class="rpub"><div class="pbadge">IEEE</div></div>
     <div class="rb">
