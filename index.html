@@ -46,15 +46,21 @@ body::before{content:'';position:fixed;inset:0;background-image:url("data:image/
 .idxh{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:24px 44px;border-bottom:1px solid var(--bd)}
 .idxsub{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
 .idxgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--bd)}
-.idxc{background:var(--k);padding:28px 32px;text-decoration:none;display:flex;flex-direction:column;gap:11px;transition:background .2s}
-.idxc:hover{background:var(--m)}
-.idxtop{display:flex;align-items:baseline;gap:14px}
-.idxn{font-family:'Bebas Neue',sans-serif;font-size:44px;line-height:.85}
+.idxc{background:var(--k);padding:28px 32px;text-decoration:none;display:flex;flex-direction:column;gap:10px;transition:background .2s,transform .2s}
+.idxc:hover{background:var(--m);transform:translateY(-3px)}
 .idxk{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--w)}
+.idxtop{display:flex;align-items:baseline;gap:11px}
+.idxn{font-family:'Bebas Neue',sans-serif;font-size:54px;line-height:.8;font-variant-numeric:tabular-nums}
+.idxu{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mu)}
 .idxt{font-size:13px;color:#9a9288;line-height:1.6;flex:1}
 .idxt b{color:var(--w);font-weight:500}
-.idxgo{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);transition:color .2s}
-.idxc:hover .idxgo{color:var(--r)}
+.idxgo{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);display:inline-block;transition:color .2s,transform .2s}
+.idxc:hover .idxgo{color:var(--r);transform:translateX(5px)}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+  .hname span{background:linear-gradient(100deg,var(--r) 0%,var(--r) 40%,#ff9166 50%,var(--r) 60%,var(--r) 100%);background-size:240% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:sheen 5.5s ease-in-out infinite}
+}
+@keyframes sheen{0%{background-position:135% 0}100%{background-position:-135% 0}}
+@media(prefers-reduced-motion:reduce){.hname span{animation:none;-webkit-text-fill-color:var(--r)}}
 
 /* section chrome */
 section{border-bottom:1px solid var(--bd)}
@@ -260,10 +266,10 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
     </div>
     <div>
       <div class="hstats">
-        <div><div class="sn">3+</div><div class="sl">Years Exp</div></div>
-        <div><div class="sn">2</div><div class="sl">Publications</div></div>
-        <div><div class="sn">4.0</div><div class="sl">GPA</div></div>
-        <div><div class="sn">10+</div><div class="sl">Projects</div></div>
+        <div><div class="sn" data-count="3+">3+</div><div class="sl">Years Exp</div></div>
+        <div><div class="sn" data-count="2">2</div><div class="sl">Publications</div></div>
+        <div><div class="sn" data-count="4.0">4.0</div><div class="sl">GPA</div></div>
+        <div><div class="sn" data-count="10+">10+</div><div class="sl">Projects</div></div>
       </div>
       <div class="ctar">
         <a href="[RESUME_LINK]" class="btn br">Resume ↓</a>
@@ -291,36 +297,42 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
 <section class="idx" id="map">
   <div class="idxh">
     <p class="sklbl" style="margin:0">The Work at a Glance</p>
-    <p class="idxsub">6 domains · 23 case studies · 2 papers · tap to jump</p>
+    <p class="idxsub">23 case studies + 2 papers across 6 domains · count = projects per domain · tap to jump</p>
   </div>
   <div class="idxgrid">
     <a class="idxc" href="#projects">
-      <div class="idxtop"><span class="idxn" style="color:var(--gr)">8</span><span class="idxk">ML &amp; AI Systems</span></div>
+      <div class="idxk">ML &amp; AI Systems</div>
+      <div class="idxtop"><span class="idxn" style="color:var(--gr)" data-count="8">8</span><span class="idxu">ML projects</span></div>
       <div class="idxt">IEEE-published computer vision, fraud detection &amp; explainable credit risk — <b>0.96 ROC-AUC</b>, 95% precision, edge-deployed CNNs.</div>
       <span class="idxgo">Explore →</span>
     </a>
     <a class="idxc" href="#business">
-      <div class="idxtop"><span class="idxn" style="color:var(--p)">6</span><span class="idxk">Optimization &amp; OR</span></div>
+      <div class="idxk">Optimization &amp; OR</div>
+      <div class="idxtop"><span class="idxn" style="color:var(--p)" data-count="6">6</span><span class="idxu">OR models</span></div>
       <div class="idxt">LP &amp; integer programming with shadow-price and stochastic analysis — a <b>256-scenario</b> playoff IP, Monte Carlo DCF, +5 coursework models.</div>
       <span class="idxgo">Explore →</span>
     </a>
     <a class="idxc" href="#strategy">
-      <div class="idxtop"><span class="idxn" style="color:var(--o)">3</span><span class="idxk">Data Strategy · MIT CISR</span></div>
+      <div class="idxk">Data Strategy · MIT CISR</div>
+      <div class="idxtop"><span class="idxn" style="color:var(--o)" data-count="3">3</span><span class="idxu">strategy cases</span></div>
       <div class="idxt">AI-at-scale, data monetization &amp; capability-maturity teardowns — <b>Cemex, Wolters Kluwer, CarMax</b>.</div>
       <span class="idxgo">Explore →</span>
     </a>
     <a class="idxc" href="#supplychain">
-      <div class="idxtop"><span class="idxn" style="color:var(--b)">6</span><span class="idxk">Supply Chain &amp; Ops</span></div>
+      <div class="idxk">Supply Chain &amp; Ops</div>
+      <div class="idxtop"><span class="idxn" style="color:var(--b)" data-count="6">6</span><span class="idxu">ops teardowns</span></div>
       <div class="idxt">Network optimization &amp; operations strategy on real freight — an <b>$18T</b> U.S. corridor model, CPFR turnaround, capacity planning.</div>
       <span class="idxgo">Explore →</span>
     </a>
     <a class="idxc" href="#experience">
-      <div class="idxtop"><span class="idxn" style="color:var(--r)">4</span><span class="idxk">Industry Experience</span></div>
-      <div class="idxt">Healthcare AI, fintech &amp; banking AML — graph-grounded clinical RAG on a <b>129K-entity</b> Neo4j knowledge graph. <b>3+ yrs</b>.</div>
+      <div class="idxk">Industry Experience</div>
+      <div class="idxtop"><span class="idxn" style="color:var(--r)" data-count="4">4</span><span class="idxu">roles · 3+ yrs</span></div>
+      <div class="idxt">Healthcare AI, fintech &amp; banking AML — graph-grounded clinical RAG on a <b>129K-entity</b> Neo4j knowledge graph.</div>
       <span class="idxgo">Explore →</span>
     </a>
     <a class="idxc" href="#research">
-      <div class="idxtop"><span class="idxn" style="color:var(--g)">2</span><span class="idxk">Research</span></div>
+      <div class="idxk">Research</div>
+      <div class="idxtop"><span class="idxn" style="color:var(--g)" data-count="2">2</span><span class="idxu">papers published</span></div>
       <div class="idxt">Peer-reviewed &amp; indexed — <b>IEEE</b> (forest-fire CV) and <b>Springer / SCOPUS</b> (P2P credit-risk explainability).</div>
       <span class="idxgo">Explore →</span>
     </a>
@@ -2498,5 +2510,38 @@ document.addEventListener('keydown', function(e) { if (e.key === 'Escape') close
   </div>
 </div>
 </div>
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function run(el){
+    var raw = el.getAttribute('data-count') || el.textContent;
+    var m = String(raw).match(/^([\d.]+)(.*)$/);
+    if(!m){ return; }
+    var target = parseFloat(m[1]);
+    var suffix = m[2] || '';
+    var decimals = (m[1].split('.')[1] || '').length;
+    if(reduce || isNaN(target)){ el.textContent = m[1] + suffix; return; }
+    var dur = 1200, t0 = null;
+    el.textContent = (decimals ? (0).toFixed(decimals) : '0') + suffix;
+    function step(ts){
+      if(t0 === null){ t0 = ts; }
+      var p = Math.min((ts - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = target * eased;
+      el.textContent = (decimals ? val.toFixed(decimals) : Math.round(val)) + suffix;
+      if(p < 1){ requestAnimationFrame(step); }
+    }
+    requestAnimationFrame(step);
+  }
+  var nodes = document.querySelectorAll('[data-count]');
+  if(!('IntersectionObserver' in window)){ nodes.forEach(run); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ run(e.target); io.unobserve(e.target); }
+    });
+  }, {threshold: 0.6});
+  nodes.forEach(function(n){ io.observe(n); });
+})();
+</script>
 </body>
 </html>
