@@ -258,6 +258,52 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
 .iframefooter a{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--w);text-decoration:none;padding:6px 14px;border:1px solid var(--bd)}
 .iframefooter a:hover{background:var(--w);color:var(--k)}
 
+/* ── certifications & awards ── */
+.crgrid{display:grid;grid-template-columns:repeat(3,1fr)}
+.crc{padding:30px 32px;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);display:flex;flex-direction:column;gap:12px;transition:background .2s}
+.crc:nth-child(3n){border-right:none}
+.crc:hover{background:var(--m)}
+.crc .crlogo{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:.05em;line-height:1}
+.crname{font-size:14px;font-weight:500;color:var(--w);line-height:1.45}
+.crmeta{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--mu);line-height:1.9;text-transform:uppercase}
+.crfoot{margin-top:auto;padding-top:14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.crid{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.06em;color:#3d3d3d}
+.crverify{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--r);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+.crverify:hover{border-bottom-color:var(--r)}
+.awrow{display:grid;grid-template-columns:180px 1fr;border-bottom:1px solid var(--bd)}
+.awseal{padding:28px;border-right:1px solid var(--bd);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center}
+.awseal .awy{font-family:'Bebas Neue',sans-serif;font-size:30px;letter-spacing:.04em;color:var(--g);line-height:1}
+.awseal .awk{font-family:'DM Mono',monospace;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--mu)}
+.awb{padding:26px 44px}
+.awtit{font-size:15px;font-weight:500;color:var(--w);margin-bottom:8px;line-height:1.4}
+.awmeta{font-size:12px;color:var(--mu);line-height:1.8}
+.awmeta em{color:var(--w)}
+/* certificate scans — hidden until the image file resolves */
+.crshot{display:block;margin-top:16px;border:1px solid var(--bd);line-height:0;position:relative;transition:border-color .2s;max-width:320px}
+.crshot:hover{border-color:var(--w)}
+.crshot img{width:100%;height:auto;display:block;filter:saturate(.9)}
+.crshot .crzoom{position:absolute;bottom:0;right:0;background:var(--k);color:var(--w);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-top:1px solid var(--bd);border-left:1px solid var(--bd)}
+.awshot{max-width:440px}
+
+/* ── recommendations ── */
+.recbar{padding:18px 44px;border-bottom:1px solid var(--bd);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu)}
+.recgrid{display:grid;grid-template-columns:repeat(2,1fr)}
+.recc{padding:30px 34px;border-right:1px solid var(--bd);border-bottom:1px solid var(--bd);display:flex;flex-direction:column}
+.recc:nth-child(2n){border-right:none}
+.rech{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:4px}
+.recn{font-size:14px;font-weight:500;color:var(--w)}
+.recrel{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--b);border:1px solid var(--bd);padding:2px 8px;white-space:nowrap}
+.recrole{font-size:11px;color:#4a4a4a;line-height:1.6;margin-bottom:16px}
+.recq{font-size:13px;color:#b9b2a6;line-height:1.85;border-left:2px solid var(--bd);padding-left:16px}
+.recq em{color:var(--w);font-style:normal}
+.recmore b{color:var(--w);font-weight:500}
+.recmore{display:none;font-size:13px;color:#b9b2a6;line-height:1.85;border-left:2px solid var(--bd);padding-left:16px;margin-top:-1px}
+.recmore.open{display:block}
+.recmore p+p{margin-top:12px}
+.rectog{align-self:flex-start;margin-top:16px;background:none;border:1px solid var(--bd);color:var(--mu);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:7px 14px;cursor:pointer;transition:all .2s}
+.rectog:hover{border-color:var(--w);color:var(--w)}
+.recdate{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.08em;color:#3d3d3d;margin-top:14px;text-transform:uppercase}
+
 @media(max-width:900px){
   .hero{grid-template-columns:1fr}.hl{border-right:none;padding:48px 28px}.hr2{display:none}
   .sh{grid-template-columns:1fr}.snum{display:none}.stit{padding:16px 24px}
@@ -266,6 +312,9 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
   .idxgrid{grid-template-columns:1fr}.idxh{padding:18px 24px}
   .cr2{grid-template-columns:1fr 2fr;padding:14px 24px}.cn,.ctag{display:none}
   .rr{grid-template-columns:1fr}.rpub{border-right:none;border-bottom:1px solid var(--bd)}
+  .crgrid{grid-template-columns:1fr}.crc{border-right:none;padding:26px 24px}
+  .awrow{grid-template-columns:1fr}.awseal{border-right:none;border-bottom:1px solid var(--bd);flex-direction:row;gap:12px}.awb{padding:24px}
+  .recgrid{grid-template-columns:1fr}.recc{border-right:none;padding:26px 24px}.recbar{padding:16px 24px}
   .cw{grid-template-columns:1fr;gap:36px;padding:48px 28px}
   footer{flex-direction:column;gap:8px;text-align:center;padding:18px 28px}
   .oh{padding:80px 28px 44px}.obody{padding:0 28px 56px}
@@ -738,6 +787,175 @@ footer p{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;colo
       <div class="rmeta">Presented at ICCIDE-2024, VIT-AP University. Published in Springer Lecture Notes in Networks and Systems. Indexed in SCOPUS and EI Compendex. EBM + SHAP + LIME explainability framework across 179,235 Bondora records — 95% precision on high-risk borrowers.</div>
       <a href="https://link.springer.com/chapter/10.1007/978-981-96-4691-3_13" class="rlink" target="_blank">View on Springer →</a>
     </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS & AWARDS -->
+<section id="credentials">
+  <div class="sh"><div class="snum">08 / CREDENTIALS</div><div class="stit">Certifications &amp; Awards</div></div>
+  <div class="crgrid">
+    <div class="crc">
+      <div class="crlogo" style="color:var(--r)">DATABRICKS</div>
+      <div class="crname">Databricks Certified Data Engineer Associate</div>
+      <div class="crmeta">Databricks<br>Issued Jul 2026 · Valid to Jul 2028</div>
+      <div class="crfoot">
+        <a href="https://www.credential.net/8af565f6-b94c-4506-80e1-10c50eb3a1d3" class="crverify" target="_blank" rel="noopener">Verify →</a>
+        <span class="crid">ID 189499110</span>
+      </div>
+    </div>
+    <div class="crc">
+      <div class="crlogo" style="color:var(--b)">GGU &times; UPGRAD</div>
+      <div class="crname">Data Science Bootcamp</div>
+      <div class="crmeta">Golden Gate University, San Francisco<br>Issued Mar 2024</div>
+      <div class="crfoot">
+        <span class="crid">UID KH12-1111313-20240513293</span>
+      </div>
+    </div>
+    <div class="crc">
+      <div class="crlogo" style="color:var(--g)">NPTEL</div>
+      <div class="crname">Programming, Data Structures and Algorithms using Python</div>
+      <div class="crmeta">NPTEL · IIT Madras<br>Jan–Apr 2024 · 8 weeks</div>
+      <div class="crfoot">
+        <a href="https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs45/Course/NPTEL24CS45S65710436130052736.pdf" class="crverify" target="_blank" rel="noopener">Verify →</a>
+        <span class="crid">NPTEL24CS45S657104361</span>
+      </div>
+    </div>
+  </div>
+  <div class="awrow">
+    <div class="awseal">
+      <div class="awy">2023</div>
+      <div class="awk">Merit Certificate</div>
+    </div>
+    <div class="awb">
+      <div class="awtit">Merit Certificate, SUDHEE 2023 — Paper Presentation, Techeon 2023</div>
+      <div class="awmeta">Chaitanya Bharathi Institute of Technology (A), Hyderabad · 31 Jan – 1 Feb 2023. Awarded by a committee of external examiners selecting students for excellence in research, for <em>A Study of Correlation Between COVID-19 Mortality and Healthcare Infrastructure</em> — an R²=0.74 regression identifying bed count and staffing ratios as the dominant mortality predictors across 50 counties, with K-means clustering surfacing the 10 highest-risk counties for emergency deployment.</div>
+      <a class="crshot awshot" href="assets/certs/merit-sudhee-2023.jpg" target="_blank" rel="noopener"><img src="assets/certs/merit-sudhee-2023.jpg" alt="SUDHEE 2023 Merit Certificate, Chaitanya Bharathi Institute of Technology" loading="lazy" onerror="this.closest('.crshot').remove()"><span class="crzoom">View certificate ⤢</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- RECOMMENDATIONS -->
+<section id="recommendations">
+  <div class="sh"><div class="snum">09 / RECOMMENDATIONS</div><div class="stit">In Their Words</div></div>
+  <div class="recbar">10 recommendations from professors, mentors and colleagues · LinkedIn and signed letters</div>
+  <div class="recgrid">
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Tareq Nasralah</span><span class="recrel">Professor</span></div>
+      <div class="recrole">PhD in Business Information Systems · Business Analytics, Database &amp; SQL, AI &amp; Data Analytics · Northeastern University</div>
+      <div class="recq"><em>“I had the pleasure of working with Sarang as a Teaching Assistant for my Database Management course, and I highly recommend him for Data Engineering, Database Engineering, Analytics Engineering, Software Engineering, or other data-focused technical roles.”</em></div>
+      <div class="recmore">
+        <p>“Throughout the semester, Sarang consistently demonstrated an excellent understanding of database systems and data engineering fundamentals, including storage engines, indexing, transaction management, ACID properties, replication, partitioning, consistency models, SQL optimization, Oracle Database, PL/SQL, NoSQL databases, Python, and data wrangling. He possesses strong analytical and problem-solving skills and consistently approached technical challenges with curiosity, precision, and a desire to deepen his understanding beyond the course requirements.</p>
+        <p>As a Teaching Assistant, Sarang was dependable, professional, and highly effective in supporting students. He explained complex database and programming concepts clearly, helped students troubleshoot SQL and Python challenges, and contributed to a collaborative learning environment. His technical expertise, communication skills, and collaborative mindset make him an outstanding candidate for a wide range of technical positions involving data, databases, software development, and analytics. I am confident he will be a valuable asset to any organization and recommend him without hesitation.”</p>
+      </div>
+      <button class="rectog" onclick="toggleRec(this)">Read full ↓</button>
+      <div class="recdate">August 2026 · LinkedIn</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Xavier Babu, Ph.D.</span><span class="recrel">Professor</span></div>
+      <div class="recrole">Vice President, AI-based Analytics at Publicis-Epsilon · Adjunct Professor at UMass Lowell, Northeastern University and WPI</div>
+      <div class="recq"><em>“I am pleased to recommend Sarang Bathalapalli based on my experience with him as a student in my Business Analytics course, where he consistently stood out as the top performer in the class.”</em></div>
+      <div class="recmore">
+        <p>“What immediately impressed me was not just his academic performance, but the depth and quality of his questions during class discussions. His questions revealed a level of understanding of machine learning models that goes well beyond what is typically expected at this stage. They were thoughtful, technically precise, and often pushed the conversation into areas that benefited the entire class.</p>
+        <p>Beyond the classroom, Sarang brings a rare combination of skills that span the full data and AI lifecycle. His expertise includes: <b>Data Engineering</b> — designing and building scalable data pipelines and architectures; <b>Machine Learning</b> — developing, training, and deploying ML models with a strong grasp of both theory and practical implementation; <b>AI Solution Development</b> — building intelligent applications leveraging Large Language Models (LLMs) and modern AI frameworks; <b>Data Analytics</b> — translating complex data into actionable business insights.</p>
+        <p>What sets Sarang apart is his ability to connect these disciplines. He doesn’t just build models, he understands the end-to-end journey from raw data to business value. This kind of cross-functional fluency is rare and highly valuable in today’s data-driven landscape.</p>
+        <p>I have no hesitation in recommending Sarang for any role or opportunity in data engineering, machine learning, or AI. He has the technical depth, intellectual curiosity, and practical mindset to make a meaningful impact wherever he goes.”</p>
+      </div>
+      <button class="rectog" onclick="toggleRec(this)">Read full ↓</button>
+      <div class="recdate">June 2026 · LinkedIn</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Rohit Ranjan Srivastava</span><span class="recrel">Mentor</span></div>
+      <div class="recrole">IT Training · IT Project Management · Data Science, Machine Learning, Deep Learning, AI, Gen AI, LLM</div>
+      <div class="recq"><em>“Over two years, he consistently stood out as one of the most exceptional students I’ve worked with. While many rush to build models, he begins with the business question.”</em></div>
+      <div class="recmore">
+        <p>“I had the privilege of mentoring Sarang through UpGrad’s data science program, where he studied statistics, machine learning, natural language processing, and artificial intelligence. Over two years, he consistently stood out as one of the most exceptional students I’ve worked with.</p>
+        <p>What sets Sarang apart is his approach to problem-solving. While many rush to build models, he begins with the business question. He breaks down problems thoughtfully, tests his results thoroughly, acknowledges uncertainty with honesty, and translates findings into actionable decisions for non-technical stakeholders.</p>
+        <p>Sarang also demonstrated independence and leadership — he managed his own projects and drove our mentoring conversations with insightful questions. His ability to combine technical expertise with clear communication makes him well-prepared for consulting or finance roles that demand analytical ownership and senior associate-level responsibility.</p>
+        <p>I strongly recommend Sarang to any organization looking for a data-driven professional who can bridge the gap between analytics and business impact.”</p>
+      </div>
+      <button class="rectog" onclick="toggleRec(this)">Read full ↓</button>
+      <div class="recdate">May 2026 · LinkedIn</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">William Forbes</span><span class="recrel">Professor</span></div>
+      <div class="recrole">Northeastern University</div>
+      <div class="recq"><em>“Sarang was a great asset to the classroom and put all his effort in the course we were working on. I would recommend Sarang for whatever he puts his mind to accomplishing.”</em></div>
+      <div class="recmore">
+        <p>“I worked with Sarang for the past months in the classroom. Sarang was inquisitive, articulate and very interested in the topics we discussed. At the end of each lecture, Sarang would always discuss the evening’s topic with me after class and try to tie the concepts to experiences he has had or that I mentioned in the lecture. Sarang was a great asset to the classroom and put all his effort in the course we were working on. I would recommend Sarang for whatever he puts his mind to accomplishing. I have seen his initiative, his methodical completion of work and his pleasant demeanor, all which will make him a successful candidate for your company.”</p>
+      </div>
+      <button class="rectog" onclick="toggleRec(this)">Read full ↓</button>
+      <div class="recdate">July 2026 · LinkedIn</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Karthik Iyer</span><span class="recrel">Senior Leader</span></div>
+      <div class="recrole">GCC Entity &amp; Site Operations Leader · 7 global delivery centers stood up &amp; run · $100M+ portfolios governed</div>
+      <div class="recq"><em>“In a short span, he demonstrated a rare blend of technical precision and professional integrity. His ability to absorb complex requirements and deliver actionable insights made him a valuable asset.”</em></div>
+      <div class="recmore">
+        <p>“I had the pleasure of working with Sarang during his tenure as a Data Scientist at Kivotos AI Technology. In a short span, he demonstrated a rare blend of technical precision and professional integrity. Sarang approached every challenge with clarity and focus, contributing meaningfully to our data initiatives and aligning seamlessly with our team’s goals.</p>
+        <p>His ability to absorb complex requirements and deliver actionable insights made him a valuable asset. Whether it was model development, data interpretation, or cross-functional collaboration, Sarang consistently showed up with rigor and reliability.</p>
+        <p>I’m confident that Sarang will bring the same level of excellence and commitment to any future endeavor. Wishing him continued success as he moves forward in his career.”</p>
+      </div>
+      <button class="rectog" onclick="toggleRec(this)">Read full ↓</button>
+      <div class="recdate">September 2025 · LinkedIn</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Dr. Y. Rama Devi</span><span class="recrel">Research Advisor</span></div>
+      <div class="recrole">Professor and Head, Department of Artificial Intelligence and Machine Learning · Chaitanya Bharathi Institute of Technology (A), Hyderabad</div>
+      <div class="recq"><em>“I guided him during his projects ‘A Deep Learning Approach to Forest Fire Detection and Monitoring’ and ‘A Study of Correlation Between Covid19 mortality and Healthcare infrastructure’, during which I found him to be extremely conscientious and diligent.”</em></div>
+      <div class="recmore">
+        <p>“He is always curious and determined to better his understanding of the topic at his hand. His excellent work ethic, friendly and helpful nature make him an asset to any team in which he works.</p>
+        <p>In ‘A Deep Learning Approach to Forest Fire Detection and Monitoring’, he combined his passion for trekking with the knowledge of machine learning to come up with a cheap and effective solution for forest departments to rapidly detect forest fires in a diverse range of scenarios.</p>
+        <p>He has keen interest in research and constantly looks for opportunities to meaningfully contribute to the academic discourse in the subject of his interest. One of such instances is his project ‘A Study of Correlation Between Covid19 mortality and Healthcare infrastructure’ where he conducted regression analysis to ascertain the increase in mortality due to poor hospital infrastructure, his thorough analysis and clear presentation of the research problem earned him the certificate of merit in the college symposium, awarded by a committee of external examiners to select students for excellence in research.</p>
+        <p>I am very happy to be associated with him in this journey and recommend him for a place in the postgraduate program. I am confident that with his passion for learning and his ability to work hard to achieve his goals, he will do very well academically and excel in your program.”</p>
+      </div>
+      <button class="rectog" onclick="toggleRec(this)">Read full ↓</button>
+      <div class="recdate">Signed letter of recommendation</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Garima Gupta</span><span class="recrel">Mentor</span></div>
+      <div class="recrole">Data Scientist at AGCO · Leveraging Data, AI &amp; Automation · GenAI, ML &amp; statistical experimentation</div>
+      <div class="recq"><em>“Sarang’s passion for analytics, coupled with his curiosity to explore new concepts, makes him an asset to any analytics-driven team.”</em></div>
+      <div class="recmore">
+        <p>“I highly recommend Sarang as a dedicated Data Science enthusiast with exceptional skills in Python, SQL, Excel, Statistical Data Analysis, and Tableau visualization. His proficiency extends to working on projects involving Deep Learning, Tensorflow, and Keras, particularly in the domain of Forest Fire Monitoring. Sarang’s passion for analytics, coupled with his curiosity to explore new concepts, makes him an asset to any analytics-driven team. His ability to deliver noticeable work and eagerness to learn set him apart in the field. I confidently endorse Sarang for his outstanding analytics capabilities and continuous pursuit of knowledge in the field.”</p>
+      </div>
+      <button class="rectog" onclick="toggleRec(this)">Read full ↓</button>
+      <div class="recdate">January 2024 · LinkedIn</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Dr. M. Ramchander</span><span class="recrel">Professor</span></div>
+      <div class="recrole">MCA, MTech (CSE), PhD (CSE) · Assistant Professor, Department of Computer Applications · Chaitanya Bharathi Institute of Technology (A), Hyderabad</div>
+      <div class="recq"><em>“He is good at grasping the content, has good analytical skills and is capable of critical thinking. He is passionate about furthering his studies and coming up with socially relevant projects.”</em></div>
+      <div class="recmore">
+        <p>“I have known him in my capacity as a Professor of Computer Science, Department of Computer Applications between the period of 2021 and 2023 where I taught him Software Engineering and Database management systems.</p>
+        <p>During his study, I have found him to be a sincere and honest student. He is good at grasping the content, has good analytical skills and is capable of critical thinking. He is passionate about furthering his studies and coming up with socially relevant projects.</p>
+        <p>I am of the view that he will carry these qualities of creativity, perseverance, and thirst for knowledge in his postgraduate studies at your university. I would recommend him for a place in the postgraduate program and wish him all the best in future studies.”</p>
+      </div>
+      <button class="rectog" onclick="toggleRec(this)">Read full ↓</button>
+      <div class="recdate">Signed letter of recommendation</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Aman Kasaudhan</span><span class="recrel">Mentor</span></div>
+      <div class="recrole">AI Product Lead · GenAI, LLMOps, MLOps &amp; Data Science · Corporate Trainer: NTT Data, Kotak Bank, LTI Mindtree</div>
+      <div class="recq"><em>“Sarang is absolutely an intelligent as well hard working guy who always seek to learn new things and try to grab in-depth knowledge, I have belief that Sarang will do great job in this domain.”</em></div>
+      <div class="recdate">September 2024 · LinkedIn</div>
+    </div>
+
+    <div class="recc">
+      <div class="rech"><span class="recn">Dr. Ramesh Ponnala</span><span class="recrel">Professor</span></div>
+      <div class="recrole">Assistant Professor &amp; Exam SPOC, Faculty of Science and Technology · IFHE Hyderabad</div>
+      <div class="recq"><em>“He is good at Analytics and keen to learn and migrate quickly to trending technologies. Hard working and skillful, having leadership qualities.”</em></div>
+      <div class="recdate">January 2024 · LinkedIn</div>
+    </div>
+
   </div>
 </section>
 
@@ -2317,6 +2535,13 @@ function toggleAbout() {
   var btn = document.getElementById('aboutToggleBtn');
   var isOpen = body.classList.toggle('open');
   btn.textContent = isOpen ? 'Show Less ↑' : 'Read Full Story ↓';
+}
+
+function toggleRec(btn) {
+  var more = btn.parentNode.querySelector('.recmore');
+  if (!more) return;
+  var isOpen = more.classList.toggle('open');
+  btn.textContent = isOpen ? 'Show less ↑' : 'Read full ↓';
 }
 
 function openOv(id) {
